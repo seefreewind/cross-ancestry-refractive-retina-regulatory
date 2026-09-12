@@ -1,5 +1,15 @@
 # Predominantly shared cross-ancestry genetic architecture of refractive error despite ancestry-associated retinal regulatory variation
 
+Sisi Xu^1^, Yu Zhang^2^, Tiantian Zeng^1^, Jiechen Liu^1^, and Ling Qiu^1^*
+
+^1^ The First Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, China
+
+^2^ The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, China
+
+*Corresponding author: Ling Qiu, cosend99@163.com
+
+ORCID: Ling Qiu, 0009-0007-3662-5124
+
 ## Abstract
 
 Ancestry-associated molecular regulatory variation is increasingly measurable in human tissues, but its relationship to ancestry-divergent genetic effects on complex traits remains unclear. We tested whether ancestry-associated retinal regulatory variation marks divergent European (EUR) and East Asian (EAS) genetic architecture for refractive error. Public EUR no-23andMe and EAS refractive-error GWAS summary statistics were harmonized, reference anchored and analyzed with ancestry-matched LD score regression, cross-population S-LDXR, human retinal open chromatin regions (OCRs) and a matched heterogeneity test comparing ancestry-associated differentially accessible retinal regions (DARs) with non-DAR retinal OCRs. The analysis set included 3,112,573 shared SNPs after effect alignment and paired-reference checks. Using the method-standard MAF > 0.05 threshold, genome-wide S-LDXR estimated high EUR-EAS sharing (GCORSQ = 1.028, SE = 0.100), and broad retinal OCRs showed a compatible pattern (GCORSQ = 0.948, SE = 0.097). In the primary DAR analysis, 71 of 1,232 DAR SNPs and 19,653 of 379,279 matched comparator SNPs fell in the top 5% heterogeneity endpoint (OR = 1.119, 95% CI 0.867-1.423, P = 0.367; matched permutation P = 0.334). Ancestry-associated retinal regulatory variation was not accompanied by a detectable large systematic excess of EUR-EAS association-effect heterogeneity, although modest enrichment remains possible.
@@ -126,37 +136,37 @@ Table 3. DAR heterogeneity and robustness tests.
 
 ## Figure legends
 
-Fig. 1. Study design. Public EUR no-23andMe and EAS refractive-error GWAS summary statistics were harmonized, empirically anchored to the reference coordinate framework and analyzed with ancestry-matched LDSC, S-LDXR and retinal regulatory annotations. The primary DAR analysis compared ancestry-associated retinal DAR SNPs with matched non-DAR retinal OCR SNPs for association-effect heterogeneity, with permutation, block-level robustness and effect-size precision analyses.
+Fig. 1. Study design. Study framework with two separate input streams. Public EUR no-23andMe and EAS refractive-error GWAS summary statistics entered GWAS harmonization, including allele alignment, shared-variant matching, reference anchoring and paired-reference checks. Human retinal regulatory atlas annotations entered a separate regulatory-processing stream, including source annotation definition, coordinate harmonization/liftover, reference anchoring and SNP annotation mapping. The streams were joined in an aligned analysis framework used to test cross-ancestry genetic sharing genome-wide and within broad retinal OCRs, and ancestry-linked association-effect heterogeneity in ancestry-associated DARs relative to matched non-DAR retinal OCRs. Robustness checks were attached to the DAR heterogeneity branch.
 
-Fig. 2. Cross-ancestry genetic architecture of refractive error. Forest plot shows S-LDXR GCORSQ estimates and 95% confidence intervals for the genome-wide analysis, all retinal OCRs and the descriptive ancestry-DAR annotation. Method-standard MAF > 0.05 estimates are shown for genome-wide and all-retinal-OCR analyses; the DAR estimate is descriptive because of sparse SNP support.
+Fig. 2. Genome-wide and retinal-OCR cross-ancestry sharing. Forest plot showing S-LDXR squared cross-population genetic correlation (GCORSQ) estimates and 95% confidence intervals. Primary MAF > 0.05 estimates are shown with stronger visual weight for genome-wide and all-retinal-OCR analyses. MAF > 0.01 estimates are shown as supporting sensitivity analyses. The vertical dashed line marks GCORSQ = 1. Estimates above 1 are interpreted as boundary-adjacent estimator behavior around high sharing, not as evidence that the underlying correlation exceeds its natural parameter boundary.
 
-Fig. 3. Primary DAR heterogeneity analysis. (A) Proportion of SNPs in the top 5% association-effect heterogeneity endpoint for ancestry-associated DARs and matched non-DAR retinal OCRs. (B) Primary odds ratio and 95% confidence interval. (C) Matched permutation null distribution for the mean chi2_het difference, with the observed statistic marked.
+Fig. 3. DAR heterogeneity, permutation and precision. (A) Observed proportions of SNPs in the top 5% of the genome-wide χ²het distribution for ancestry-associated DARs and matched non-DAR retinal OCRs. (B) Primary odds ratio, 95% confidence interval and P value for the top-5% endpoint, shown together with the 80% and 90% minimum detectable odds ratios and the OR = 1.5 large-effect reference boundary. (C) Matched-permutation null distribution of the mean χ²het difference. Shaded tails represent permutation statistics at least as extreme as the observed absolute statistic. The empirical P value is two-sided. Block-level analysis was consistent with the primary inference (adjusted P = 0.3836).
 
-Fig. 4. Effect-size precision and robustness. The primary DAR odds ratio and 95% confidence interval are shown with the OR = 1.5 prespecified robustness boundary and the 80% and 90% minimum detectable odds ratios. Block-level robustness did not support a DAR-linked increase in mean heterogeneity (P = 0.3836).
+Supplementary Fig. S1. Descriptive ancestry-DAR S-LDXR estimate. Descriptive S-LDXR estimate for the ancestry-DAR annotation. Sparse SNP support yielded wide uncertainty, so this panel is separated from the main cross-ancestry architecture figure and should not be interpreted as evidence for true ancestry divergence.
 
 ## Data availability
 
-All analyses used publicly available datasets and reference resources. Refractive-error GWAS summary statistics were obtained from the public multi-ancestry refractive-error GWAS resource described by Cheng et al. The human retinal regulatory annotations were derived from the Human Retina Cell Atlas and associated public atlas resources. Reference resources included 1000 Genomes Project EUR and EAS panels, baselineLD annotations, dbSNP Build 151 and UCSC liftover chain files. Third-party GWAS and reference files should be obtained from their original repositories under the terms set by the data providers.
+All analyses used publicly available datasets and reference resources. Refractive-error GWAS summary statistics were obtained from the public multi-ancestry refractive-error GWAS resource described by Cheng et al. The human retinal regulatory annotations were derived from the Human Retina Cell Atlas and associated public atlas resources. Reference resources included 1000 Genomes Project EUR and EAS panels, baselineLD annotations, dbSNP Build 151 and UCSC liftover chain files. Third-party GWAS and reference files should be obtained from their original repositories under the terms set by the data providers. The derived summary tables, figure-ready outputs, final figures and reproducibility records generated for this study are archived on Zenodo at https://doi.org/10.5281/zenodo.22726972.
 
 ## Code availability
 
-The analysis scripts, fixed configuration files, QC records and figure-ready tables will be made available in a public repository before submission: https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory. The current analysis package contains reproducible harmonization/QC scripts, S-LDXR scripts, heterogeneity scripts and robustness scripts.
+The analysis scripts, fixed configuration files, QC records and figure-generation code are available in the public GitHub repository https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory and are archived with the project record on Zenodo at https://doi.org/10.5281/zenodo.22726972.
 
 ## Acknowledgements
 
-[Acknowledgements to be added by the authors.]
+Not applicable.
 
 ## Author contributions
 
-[Author contributions to be added by the authors using CRediT taxonomy.]
+Sisi Xu: Conceptualization, data curation, formal analysis, methodology, software, visualization, writing - original draft, and writing - review & editing. Yu Zhang: Data curation, investigation, validation, and writing - review & editing. Tiantian Zeng: Data curation, investigation, validation, and writing - review & editing. Jiechen Liu: Data curation, investigation, validation, and writing - review & editing. Ling Qiu: Conceptualization, supervision, project administration, resources, methodology, and writing - review & editing.
 
 ## Funding
 
-[Funding information to be added by the authors.]
+The authors received no funding for this work.
 
 ## Competing interests
 
-The authors declare no competing interests. [Please confirm before submission.]
+The authors declare no competing interests.
 
 ## References
 

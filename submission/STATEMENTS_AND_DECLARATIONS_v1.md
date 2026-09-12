@@ -14,11 +14,11 @@ Sisi Xu: Conceptualization, data curation, formal analysis, methodology, softwar
 
 ## Data availability
 
-This study analyzed publicly available summary-level and aggregate datasets and involved no new participant recruitment. Refractive-error GWAS summary statistics, retinal regulatory annotations and reference resources should be obtained from their original providers under the applicable data-use terms. Repository links and accession details should be checked by the authors before submission.
+This study analyzed publicly available summary-level and aggregate datasets and involved no new participant recruitment. Refractive-error GWAS summary statistics, retinal regulatory annotations and reference resources should be obtained from their original providers under the applicable data-use terms. The derived summary tables, figure-ready outputs, final figures and reproducibility records generated for this study are archived on Zenodo at https://doi.org/10.5281/zenodo.22726972.
 
 ## Code availability
 
-Analysis scripts, configuration files, QC records and figure-generation code will be made available in a public repository before submission: https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory.
+Analysis scripts, configuration files, QC records and figure-generation code are available in the public GitHub repository https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory and are archived with the project record on Zenodo at https://doi.org/10.5281/zenodo.22726972.
 
 ## Ethics statement
 

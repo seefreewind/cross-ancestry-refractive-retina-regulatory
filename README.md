@@ -50,7 +50,7 @@ Raw and large third-party data are not redistributed here. This includes public 
 
 ## Data availability boundary
 
-This study uses publicly available summary-level and aggregate datasets and involved no new participant recruitment. Provider-restricted or license-governed files should be downloaded by users from the original repositories under the applicable terms. The repository is intended to make the analysis logic, QC decisions and manuscript summary outputs auditable without redistributing restricted source data.
+This study uses publicly available summary-level and aggregate datasets and involved no new participant recruitment. Provider-restricted or license-governed files should be downloaded by users from the original repositories under the applicable terms. The repository is intended to make the analysis logic, QC decisions and manuscript summary outputs auditable without redistributing restricted source data. Derived summary tables, figure-ready outputs, final figures and reproducibility records generated for this study are archived on Zenodo at https://doi.org/10.5281/zenodo.22726972.
 
 ## Repository URL
 
