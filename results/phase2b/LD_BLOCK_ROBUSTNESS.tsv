@@ -1,0 +1,3 @@
+analysis	statistic	DAR_block_N	non_DAR_block_N	coefficient_has_DAR	SE_HC3	CI95_low	CI95_high	p_value	adjustment
+block_level_adjusted_OLS	mean_chi2_het	192	8	0.056254188428753474	0.06456990951280876	-0.07030050870136194	0.18280888555886887	0.3836374922815995	log1p_SNP_N+mean_MAF_avg_ref+mean_baseline_ld_base+retinal_OCR_density
+block_level_unadjusted_descriptive_welch	mean_chi2_het	192	8	0.0558834182314043				0.38477735192133855	none_descriptive

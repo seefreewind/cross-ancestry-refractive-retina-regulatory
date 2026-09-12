@@ -1,0 +1,4 @@
+annotation	interval_N	mapped_unique_interval_N	panel_SNP_N	shared_usable_SNP_N	MAF_gt_0p01_SNP_N	MAF_gt_0p05_SNP_N
+all_retinal_OCR	700146	685987	766637	380615	713105	544077
+ancestry_DAR	2227	2219	2697	1232	2511	1916
+matched_non_DAR_retinal_OCR	697837	683683	762598	379279	709523	541405

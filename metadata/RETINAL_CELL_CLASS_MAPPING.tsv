@@ -1,0 +1,11 @@
+source_resource	source_label	collapsed_primary_class	mapping_status	phase0_evidence	note
+HRCA S12/S19	Rod	Rod	mapped	Table S12A and S19A	hg38 OCR/DAR table
+HRCA S12/S19	Cone	Cone	mapped	Table S12A and S19E	hg38 OCR/DAR table
+HRCA S12/S19	BC	Bipolar	mapped	Table S12A and S19F	BC collapsed to Bipolar
+HRCA S12/S19	AC	Amacrine	mapped	Table S12A and S19G	AC collapsed to Amacrine
+HRCA S12/S19	RGC	RGC	mapped	Table S12A and S19B	hg38 OCR/DAR table
+HRCA S12/S19	MG	Muller_glia	mapped	Table S12A and S19C	MG collapsed to Muller_glia
+HRCA S12/S19	HC	Horizontal	mapped	Table S12A and S19D	hg38 OCR/DAR table
+HRCA S12/S19	Astrocyte	Astrocyte	mapped	Table S12A	hg38 OCR count available; no S19 DAR sheet
+HRCA S12/S19	Microglia	Microglia	mapped	Table S12A	hg38 OCR count available; no S19 DAR sheet
+HRCA atlas/RPE resource	RPE	RPE	not_confirmed_in_S12_S19	Not present in extracted S12A/S19 sheet list	Keep as a reserved class until an auditable RPE OCR resource is selected

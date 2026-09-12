@@ -1,0 +1,16 @@
+Subject: Genome assembly for released refractive-error GWAS summary statistics
+
+Dear Cheng et al. team,
+
+I am using the released summary statistics from your 2026 Nature Genetics study, “Multi-ancestry genome-wide association analyses of refractive error augment genetic discovery and polygenic prediction.” Could you please confirm whether the `CHR/POS` coordinates in the following files use GRCh37/hg19 or GRCh38/hg38?
+
+- `EUR_meta_no23andMe`
+- `EAS_meta`
+- `AFR_meta`
+- `Cross_ancestry_EUR_EAS_AFR_no23andMe`
+
+If available, could you also point me to a README, manifest or methods statement that explicitly documents the genome assembly, so that it can be cited and archived with the analysis?
+
+Many thanks,
+
+[Name]

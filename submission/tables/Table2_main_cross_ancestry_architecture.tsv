@@ -1,0 +1,8 @@
+analysis	MAF_threshold	SNP_N	metric	estimate	SE	CI95	interpretation
+EUR LDSC	analysis-specific		h2	0.1219	0.0072		Substantial common-variant signal
+EAS LDSC	analysis-specific		h2	0.1494	0.0119		Substantial common-variant signal
+Genome-wide S-LDXR	>0.05	3,112,573	GCORSQ	1.027596	0.099604	0.832373-1.222820	High EUR-EAS sharing
+All retinal OCR S-LDXR	>0.05	544,077	GCORSQ	0.947606	0.096926	0.757631-1.137582	Compatible with shared architecture
+Genome-wide S-LDXR supporting	>0.01	3,112,573	GCORSQ	1.009945	0.108276	0.797725-1.222165	Consistent supporting analysis
+All retinal OCR S-LDXR supporting	>0.01	380,615	GCORSQ	0.935405	0.101099	0.737250-1.133559	Consistent supporting analysis
+Ancestry-DAR S-LDXR descriptive	>0.01	1,232	GCORSQ	0.571191	0.577063	-0.559852-1.702234	Underpowered descriptive estimate

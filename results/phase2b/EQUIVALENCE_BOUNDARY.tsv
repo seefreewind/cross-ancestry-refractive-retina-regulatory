@@ -1,0 +1,2 @@
+boundary	margin_OR	observed_OR	OR_CI95_low	OR_CI95_high	large_enrichment_excluded	interpretation
+large_enrichment_OR	1.5	1.1190470774746328	0.86749624790697	1.4233866954907068	True	CI_upper_below_margin

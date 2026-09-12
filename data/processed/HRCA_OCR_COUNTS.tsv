@@ -1,0 +1,11 @@
+cell_class_source	cell_class	number_of_peaks	source_sheet	build
+AC	Amacrine	215994	Table S12A - Peak numbers	hg38
+Astrocyte	Astrocyte	158797	Table S12A - Peak numbers	hg38
+BC	Bipolar	211077	Table S12A - Peak numbers	hg38
+Cone	Cone	218488	Table S12A - Peak numbers	hg38
+HC	Horizontal	167646	Table S12A - Peak numbers	hg38
+MG	Muller_glia	167637	Table S12A - Peak numbers	hg38
+Microglia	Microglia	176600	Table S12A - Peak numbers	hg38
+RGC	RGC	205224	Table S12A - Peak numbers	hg38
+Rod	Rod	135675	Table S12A - Peak numbers	hg38
+Union Peak	Union Peak	700146	Table S12A - Peak numbers	hg38

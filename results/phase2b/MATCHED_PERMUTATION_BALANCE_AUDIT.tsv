@@ -1,0 +1,13 @@
+metric	value	status
+N_strata_total	10101	INFO
+N_informative_strata	834	INFO
+DAR_retained	1069	PASS
+DAR_excluded	163	INFO
+controls_in_informative_strata	59215	INFO
+median_controls_per_DAR_stratum	38.0	INFO
+minimum_controls_per_DAR_stratum	1.0	INFO
+maximum_controls_per_DAR_stratum	650.0	INFO
+control_reuse_design	none_label_permutation_not_pairwise_resampling	PASS
+control_count_median_by_informative_stratum	49.0	INFO
+control_count_min_by_informative_stratum	2	INFO
+control_count_max_by_informative_stratum	1040	INFO

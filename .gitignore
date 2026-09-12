@@ -1,0 +1,11 @@
+# Large or provider-restricted local data
+data/raw/
+data/interim/
+*.parquet
+*.gz
+*.tgz
+*.aria2
+logs/
+.DS_Store
+._*
+__pycache__/

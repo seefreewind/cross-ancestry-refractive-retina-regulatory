@@ -1,0 +1,72 @@
+freeze_id: PHASE2_ANALYSIS_FREEZE_v1
+freeze_status: EXECUTION_AUTHORIZED_BY_USER_2026-09-12
+created_from_draft: config/PHASE2_ANALYSIS_FREEZE_DRAFT_v2.yaml
+source_decision: reports/PHASE1C2_SLDXR_BASELINE_DECISION.md
+analysis_build: GRCh37.p13_reference_anchored
+phase1c2_input_freeze_id: SLDXR_FORMAL_INPUT_FREEZE_v1:6da435f42faa40f20ecf4b0b1e48d70782224704c86a829fe1e73c5269250b0a
+
+primary_route: ROUTE_B_HETEROGENEITY_ENRICHMENT_LED
+claim_boundary:
+  allowed:
+    - EUR-EAS SNP-level effect heterogeneity in the formal shared SNP universe.
+    - Enrichment of high heterogeneity among ancestry-DAR SNPs relative to matched non-DAR retinal OCR SNPs.
+    - Global retinal OCR and genome-wide S-LDXR as contextual controls.
+  prohibited:
+    - Do not interpret DAR overlap alone as biological mechanism.
+    - Do not relax the published ancestry-DAR FDR threshold to increase SNP counts.
+    - Do not claim cell-type-specific S-LDXR from the sparse DAR set.
+    - Do not describe S-LDXR GCORSQ > 1 as literal super-correlation.
+
+input_files:
+  harmonized_effects: data/processed/EUR_EAS_HARMONIZED.parquet
+  formal_sldxr_eas_sumstats: data/interim/sldxr_formal/EAS_sumstats_aligned.gz
+  formal_sldxr_eur_sumstats: data/interim/sldxr_formal/EUR_sumstats_aligned.gz
+  formal_score_universe: data/interim/sldxr_formal/paired_score_universe_maf_gt_01.parquet
+  dar_annotation_prefix: data/interim/sldxr_annotations/dar_global/
+  ocr_union_annotation_prefix: data/interim/sldxr_annotations/ocr_union/
+  matched_non_dar_annotation_prefix: data/interim/sldxr_annotations/matched_non_dar_ocr/
+  eas_frequency_prefix: data/interim/sldxr_reference/frequency/EAS.
+  eur_frequency_prefix: data/interim/sldxr_reference/frequency/EUR.
+  baseline_ld_score_prefix: data/interim/sldxr_scores_aligned/baseline_chr.
+
+primary_heterogeneity_estimand:
+  name: EUR_EAS_beta_difference_heterogeneity
+  signed_statistic: z_het = (b_EUR - b_EAS_aligned_to_EUR) / sqrt(se_EUR^2 + se_EAS^2)
+  primary_score: chi2_het = z_het^2
+  sample_overlap_assumption: independent ancestry-specific GWAS, covariance set to 0
+  effect_scale_note: effect estimates are interpreted on the harmonized GWAS scale already used in Phase 0 and Phase 1C formal inputs.
+
+primary_enrichment_test:
+  universe: formal shared S-LDXR SNPs intersected with EUR-EAS harmonized effects
+  case_annotation: ancestry_DAR
+  primary_comparator: matched_non_DAR_retinal_OCR
+  positive_control: all_retinal_OCR
+  primary_binary_endpoint: top_5pct_chi2_het
+  sensitivity_binary_endpoints:
+    - top_1pct_chi2_het
+    - top_10pct_chi2_het
+  continuous_endpoint: chi2_het
+  minimum_case_snp_n: 1000
+  permutation:
+    n_permutations: 1000
+    random_seed: 20260912
+    strata:
+      - chromosome
+      - average_EUR_EAS_MAF_decile
+      - absolute_EUR_EAS_MAF_difference_quintile
+      - baseline_ld_score_decile
+      - retinal_OCR_status
+    statistic: mean_chi2_het_in_DAR_minus_matched_non_DAR
+  report_empirical_p_as: (1 + count(abs(null_statistic) >= abs(observed_statistic))) / (1 + n_permutations)
+
+secondary_outputs:
+  - per-cell-class DAR descriptive heterogeneity summary only if each class has at least 100 formal SNPs.
+  - locus/CRE/motif prioritization only after the primary enrichment result is written and QC passes.
+  - global DAR S-LDXR remains confirmatory and underpowered, using Phase 1C.2 pilot counts.
+
+outputs:
+  phase2_feature_matrix: data/processed/phase2/EUR_EAS_HETEROGENEITY_FEATURES.parquet
+  feature_qc: results/phase2/PHASE2_HETEROGENEITY_FEATURE_QC.tsv
+  enrichment_summary: results/phase2/PHASE2_DAR_HETEROGENEITY_ENRICHMENT.tsv
+  permutation_null: results/phase2/PHASE2_DAR_MATCHED_PERMUTATION_NULL.tsv
+  method_report: reports/PHASE2_ROUTE_B_METHOD_DESIGN.md

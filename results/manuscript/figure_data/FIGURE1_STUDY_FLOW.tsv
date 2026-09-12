@@ -1,0 +1,6 @@
+step	label	status
+1	Build-rescued EUR/EAS GWAS harmonization	PASS
+2	Formal genome-wide S-LDXR	PASS
+3	Phase 2 DAR heterogeneity primary enrichment	NOT_SUPPORTED
+4	Phase 2B post-primary robustness	COMPLETE
+5	Manuscript preparation	NEXT

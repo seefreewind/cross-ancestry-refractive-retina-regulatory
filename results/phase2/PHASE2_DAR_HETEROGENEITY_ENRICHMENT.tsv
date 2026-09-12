@@ -1,0 +1,14 @@
+analysis	endpoint	annotation	case_snp_n	background_snp_n	case_top_n	background_top_n	case_top_fraction	background_top_fraction	odds_ratio	p_value	case_mean	background_mean	case_median	background_median	mean_difference	mannwhitney_u	observed_mean_difference	empirical_p_value	permutation_snp_n	permutation_case_snp_n	permutation_background_snp_n	n_permutations	random_seed	strata
+DAR_vs_genomewide_formal_universe	top_5pct_chi2_het	dar_global	1232	3111341	71.0	155558.0	0.05762987012987013	0.04999709128636173	1.162000527367128	0.21408753837921296														
+DAR_vs_all_retinal_OCR	top_5pct_chi2_het	dar_global	1069	379546	65.0	19671.0	0.0608044901777362	0.051827709948201274	1.1844176848601728	0.1889276731011751														
+DAR_vs_matched_non_DAR_retinal_OCR	top_5pct_chi2_het	dar_global	1232	379279	71.0	19653.0	0.05762987012987013	0.05181673649213376	1.1190470774746328	0.3669847765461345														
+DAR_vs_genomewide_formal_universe	top_1pct_chi2_het	dar_global	1232	3111341	13.0	31113.0	0.010551948051948052	0.009999868224023017	1.0557974824468863	0.7741696030752268														
+DAR_vs_all_retinal_OCR	top_1pct_chi2_het	dar_global	1069	379546	11.0	3948.0	0.01028999064546305	0.010401901218824595	0.9891294771538507	1.0														
+DAR_vs_matched_non_DAR_retinal_OCR	top_1pct_chi2_het	dar_global	1232	379279	13.0	3947.0	0.010551948051948052	0.010406587235254259	1.0141171174335581	0.887991897327201														
+DAR_vs_genomewide_formal_universe	top_10pct_chi2_het	dar_global	1232	3111341	132.0	311126.0	0.10714285714285714	0.09999739662094255	1.0800312413620206	0.3927127586335637														
+DAR_vs_all_retinal_OCR	top_10pct_chi2_het	dar_global	1069	379546	117.0	38958.0	0.10944808231992516	0.10264368482344696	1.0744386003284727	0.4493233371712336														
+DAR_vs_matched_non_DAR_retinal_OCR	top_10pct_chi2_het	dar_global	1232	379279	132.0	38917.0	0.10714285714285714	0.10260784277537116	1.0495012462420021	0.6048743826521923														
+DAR_vs_genomewide_formal_universe	chi2_het_continuous	dar_global	1232	3111341						0.4839924773774562	1.22805554455557	1.174937318693807	0.5587905718747166	0.5216342147629283	0.05311822586176307	1938655006.5								
+DAR_vs_all_retinal_OCR	chi2_het_continuous	dar_global	1069	379546						0.8575558709789651	1.236664226420588	1.1930354263100946	0.5366628842043677	0.53011416506762	0.043628800110493415	203511218.0								
+DAR_vs_matched_non_DAR_retinal_OCR	chi2_het_continuous	dar_global	1232	379279						0.7106956687304247	1.22805554455557	1.1929336710035907	0.5587905718747166	0.5299873839554562	0.03512187355197938	235063643.0								
+DAR_vs_matched_non_DAR_retinal_OCR	matched_permutation_mean_chi2_het_difference	dar_global	1232	379279													0.06473445207945505	0.3336663336663337	60284.0	1069.0	59215.0	1000.0	20260912.0	chromosome|average_EUR_EAS_MAF_decile|absolute_EUR_EAS_MAF_difference_quintile|baseline_ld_score_decile|retinal_OCR_status

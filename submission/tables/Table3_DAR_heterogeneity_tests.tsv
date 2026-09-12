@@ -1,0 +1,8 @@
+analysis	endpoint	case_N	comparator_N	case_event	comparator_event	effect	CI95	P	interpretation
+Primary binary	Top 5% chi2_het	1,232	379,279	71 (5.76%)	19,653 (5.18%)	OR 1.119	0.867-1.423	0.367	No detectable enrichment
+Sensitivity binary	Top 1% chi2_het	1,232	379,279	13 (1.06%)	3,947 (1.04%)	OR 1.014		0.888	Consistent
+Sensitivity binary	Top 10% chi2_het	1,232	379,279	132 (10.71%)	38,917 (10.26%)	OR 1.050		0.605	Consistent
+Continuous	chi2_het	1,232	379,279			Mean difference 0.0351		0.711	No detectable shift
+Matched permutation	Mean chi2_het difference	1,069 retained in informative strata	59,215 retained in informative strata			Observed 0.0647		0.334	No matched enrichment
+Block-level robustness	Mean chi2_het by block	192 DAR-containing blocks	8 non-DAR blocks			Adjusted coefficient 0.0563	-0.0703-0.1828	0.3836	No block-level support
+Effect-size precision	Top 5% chi2_het	1,232	379,279		Comparator event rate 5.18%	MDE 1.397 at 80%; 1.467 at 90%	Primary CI upper 1.423		Large OR=1.5 enrichment excluded; modest enrichment unresolved

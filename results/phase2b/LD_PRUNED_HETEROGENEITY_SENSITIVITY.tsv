@@ -1,0 +1,9 @@
+case_snp_n	background_snp_n	case_top_n	background_top_n	case_top_fraction	background_top_fraction	odds_ratio	conditional_odds_ratio	or_ci95_low	or_ci95_high	p_value	sensitivity	endpoint	analysis	case_mean	background_mean	case_median	background_median	mean_difference	mean_difference_ci95_low	mean_difference_ci95_high	mannwhitney_u
+9.0	3262.0	2.0	139.0	0.2222222222222222	0.04261189454322502	6.419321685508736	6.410760389221845	0.6441576334257859	34.084227056828084	0.05444024675447808	r2_lt_0p1	top_5pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+9.0	3262.0	0.0	21.0	0.0	0.006437768240343348	0.0	0.0	0.0	83.58073670997923	1.0	r2_lt_0p1	top_1pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+9.0	3262.0	2.0	281.0	0.2222222222222222	0.08614347026364194	3.0310116929334012	3.029415375002057	0.30567522194786667	16.01165284212499	0.17942153194146335	r2_lt_0p1	top_10pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+										0.9835037311410468	r2_lt_0p1	chi2_het_continuous	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR	1.5973193066789166	1.0804772737324768	0.2553168613795777	0.4505246512656049	0.5168420329464398	-1.024984789447432	2.0586688553403114	14738.0
+1.0	76.0	0.0	2.0	0.0	0.02631578947368421	0.0	0.0	0.0	1462.5000000000005	1.0	r2_lt_0p01	top_5pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+1.0	76.0	0.0	1.0	0.0	0.013157894736842105	0.0	0.0	0.0	2964.000000000035	1.0	r2_lt_0p01	top_1pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+1.0	76.0	0.0	4.0	0.0	0.05263157894736842	0.0	0.0	0.0	711.7499999999934	1.0	r2_lt_0p01	top_10pct_chi2_het	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR								
+										0.6493506493506495	r2_lt_0p01	chi2_het_continuous	LD_PRUNED_DAR_vs_matched_non_DAR_retinal_OCR	0.2553168613795777	0.9452352093374352	0.2553168613795777	0.44869981523789426	-0.6899183479578574			24.0

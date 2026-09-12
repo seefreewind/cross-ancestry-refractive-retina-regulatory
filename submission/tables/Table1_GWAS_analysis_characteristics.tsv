@@ -1,0 +1,11 @@
+item	value	analysis_role	note
+Source EUR total	1,495,159	Source-study metadata; not used as constant analysis N	Public EUR file used here excluded 23andMe
+EUR 23andMe component	106,086 cases; 85,757 controls	Excluded from public EUR no-23andMe file	Source component N = 191,843
+EUR public analysis file	5,590,053 rows; per-SNP N min 100,160.0, mean 630,244.5, max 696,704.85	Input summary statistics	Variant-level effective N retained
+Source EAS total	121,172	Source-study metadata	Public EAS file contains per-SNP N
+EAS public analysis file	4,739,897 rows; per-SNP N min 10,487.49, mean 96,429.22, max 115,388.49	Input summary statistics	Variant-level effective N retained
+Harmonized EUR-EAS SNPs	3,262,168	Effect-aligned shared set	After biallelic, palindromic, duplicate and allele checks
+S-LDXR/DAR analysis SNPs	3,112,573	Primary analysis SNP set	Exact paired-reference and annotation alignment
+All retinal OCR SNPs	380,615	Broad retinal regulatory annotation	MAF >0.01 contextual count
+Ancestry-associated DAR SNPs	1,232	Primary tested annotation	Sparse annotation; DAR S-LDXR descriptive only
+Matched non-DAR retinal OCR SNPs	379,279	Primary comparator	Retinal regulatory background

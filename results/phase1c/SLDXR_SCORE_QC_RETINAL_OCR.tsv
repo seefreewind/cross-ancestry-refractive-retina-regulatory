@@ -1,0 +1,193 @@
+kind	chromosome	annotation	output_prefix	status	error
+matched_non_dar_ocr	1	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/1.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.1	PASS	
+matched_non_dar_ocr	2	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/2.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.2	PASS	
+matched_non_dar_ocr	3	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/3.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.3	PASS	
+matched_non_dar_ocr	4	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/4.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.4	PASS	
+matched_non_dar_ocr	5	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/5.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.5	PASS	
+matched_non_dar_ocr	6	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/6.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.6	PASS	
+matched_non_dar_ocr	7	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/7.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.7	PASS	
+matched_non_dar_ocr	8	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/8.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.8	PASS	
+matched_non_dar_ocr	9	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/9.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.9	PASS	
+matched_non_dar_ocr	10	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/10.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.10	PASS	
+matched_non_dar_ocr	11	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/11.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.11	PASS	
+matched_non_dar_ocr	12	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/12.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.12	PASS	
+matched_non_dar_ocr	13	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/13.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.13	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/13.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.13
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.13.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.13.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.13.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.13.bim
+[INFO] Command finished at: Thu, 10 Sep 2026 22:33:15
+"
+matched_non_dar_ocr	14	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/14.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.14	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/14.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.14
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.14.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.14.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.14.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.14.bim
+[INFO] Command finished at: Thu, 10 Sep 2026 22:36:49
+"
+matched_non_dar_ocr	15	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/15.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.15	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/15.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.15
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.15.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.15.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.15.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.15.bim
+[INFO] Command finished at: Thu, 10 Sep 2026 22:39:29
+"
+matched_non_dar_ocr	16	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/16.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.16	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/16.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.16
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.16.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.16.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.16.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.16.bim
+[INFO] Command finished at: Thu, 10 Sep 2026 22:42:38
+"
+matched_non_dar_ocr	17	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/17.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.17	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/17.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.17
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.17.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.17.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.17.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.17.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 01:46:40
+"
+matched_non_dar_ocr	18	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/18.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.18	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/18.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.18
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.18.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.18.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.18.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.18.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 02:14:37
+"
+matched_non_dar_ocr	19	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/19.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.19	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/19.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.19
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.19.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.19.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.19.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.19.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 04:09:04
+"
+matched_non_dar_ocr	20	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/20.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.20	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/20.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.20
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.20.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.20.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.20.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.20.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 04:47:49
+"
+matched_non_dar_ocr	21	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/21.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.21	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/21.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.21
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.21.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.21.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.21.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.21.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 05:47:18
+"
+matched_non_dar_ocr	22	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_annotations/matched_non_dar_ocr/22.annot.gz	data/interim/sldxr_scores/matched_non_dar_ocr_chr.22	PASS	"rchitecture/data/interim/sldxr_annotations/matched_non_dar_ocr/22.annot.gz \
+        --ld-wind-cm 1.0 \
+        --print-snps /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/print_snps_maf_gt_01.txt \
+        --out data/interim/sldxr_scores/matched_non_dar_ocr_chr.22
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:11: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  all_snp = pd.read_table(filename_list[0], delim_whitespace=True,
+/Users/zy/.codex/tools/s-ldxr/src/annot.py:34: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  tbl = pd.read_table(filename, delim_whitespace=True, engine='c',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+/Users/zy/.codex/tools/s-ldxr/src/score.py:15: FutureWarning: The 'delim_whitespace' keyword in pd.read_table is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  legend = pd.read_table(bfile_prefix+'.bim',
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.22.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EAS/1000G.EAS.paired.22.bim
+[INFO] Loading fam file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.22.fam
+[INFO] Loading bim file /Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr_reference/paired_plink_v2/EUR/1000G.EUR.paired.22.bim
+[INFO] Command finished at: Fri, 11 Sep 2026 06:49:42
+"

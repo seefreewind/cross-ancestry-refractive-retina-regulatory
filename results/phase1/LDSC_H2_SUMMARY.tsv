@@ -1,0 +1,3 @@
+ancestry	sumstats	status	h2	h2_se	h2_z	log	error
+EUR	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/ldsc/EUR.sumstats.gz	RUN_AND_BUILD_RESOLVED	0.1219	0.0072	16.930555555555554	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/results/phase1/ldsc_eur_h2.log	
+EAS	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/ldsc/EAS.sumstats.gz	RUN_AND_BUILD_RESOLVED	0.1494	0.0119	12.554621848739496	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/results/phase1/ldsc_eas_h2.log	

@@ -1,0 +1,47 @@
+freeze_status: DRAFT_NOT_EXECUTED
+created_for_route: ROUTE_B_HETEROGENEITY_ENRICHMENT_LED
+source_decision: reports/PHASE1C2_SLDXR_BASELINE_DECISION.md
+analysis_build: GRCh37.p13_reference_anchored
+phase1c2_input_freeze_id: SLDXR_FORMAL_INPUT_FREEZE_v1:6da435f42faa40f20ecf4b0b1e48d70782224704c86a829fe1e73c5269250b0a
+
+primary_architecture:
+  - order: 1
+    analysis: EUR_EAS_cross_ancestry_heterogeneity_statistic
+  - order: 2
+    analysis: ancestry_DAR_enrichment
+  - order: 3
+    analysis: matched_non_DAR_retinal_OCR_comparator
+  - order: 4
+    analysis: MAF_LD_TSS_peak_feature_matched_permutation
+  - order: 5
+    analysis: broad_retinal_OCR_positive_control
+  - order: 6
+    analysis: genome_wide_SLDXR_architecture_validation
+  - order: 7
+    analysis: global_DAR_SLDXR_confirmatory
+  - order: 8
+    analysis: cell_class_enrichment_secondary
+  - order: 9
+    analysis: locus_CRE_motif_only_after_primary_statistics_pass
+
+power_basis:
+  ancestry_DAR_intervals: 2227
+  mapped_unique_intervals: 2219
+  paired_panel_SNPs: 2697
+  shared_usable_SNPs: 1232
+  MAF_gt_0p01_SNPs: 2511
+  MAF_gt_0p05_SNPs: 1916
+  tier: CONDITIONAL
+  sldxr_role: CONFIRMATORY
+
+locked_language:
+  comparator_name: matched non-DAR retinal OCR
+  prohibited_comparator_name: stable retinal OCR
+  pilot_scope: numerical estimability only; not a biological hypothesis test
+
+execution_authorized: false
+notes:
+  - This file freezes a draft analysis architecture only.
+  - Phase 2 analyses were not executed in Phase 1C.2.
+  - Do not relax the ancestry-DAR FDR threshold to increase S-LDXR SNP counts.
+  - Cell-type S-LDXR remains outside the Phase 1C.2 scope.

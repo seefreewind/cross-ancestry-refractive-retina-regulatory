@@ -1,0 +1,3 @@
+sensitivity	original_N	pruned_N	DAR_N	matched_non_DAR_N	retinal_OCR_N
+r2_lt_0p1	3112573	19631	9	3262	3274
+r2_lt_0p01	3112573	488	1	76	78

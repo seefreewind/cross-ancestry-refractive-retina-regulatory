@@ -1,0 +1,3 @@
+ancestry	source_rows	biallelic_rows	palindromic_removed	duplicate_snp_removed	output_rows	output	build_status	build_note
+EUR	5590053	5260419	813247	1	4447171	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr/EUR_sumstats.gz	GRCh37_EMPIRICALLY_ADJUDICATED	Raw source declaration remains absent; Phase 1C rsID/allele concordance adjudicated GRCh37.p13.
+EAS	4739897	4324533	671853	5	3652675	/Volumes/EMPTY2TB/跨祖源屈光不正遗传效应 × retinal regulatory architecture/data/interim/sldxr/EAS_sumstats.gz	GRCh37_EMPIRICALLY_ADJUDICATED	Raw source declaration remains absent; Phase 1C rsID/allele concordance adjudicated GRCh37.p13.

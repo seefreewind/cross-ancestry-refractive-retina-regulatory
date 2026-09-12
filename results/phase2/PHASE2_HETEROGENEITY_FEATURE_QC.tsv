@@ -1,0 +1,8 @@
+metric	value	status
+formal_snp_n	3112573.0	PASS
+feature_snp_n	3112573.0	PASS
+dar_snp_n	1232.0	PASS
+ocr_union_snp_n	380615.0	PASS
+matched_non_dar_snp_n	379279.0	PASS
+chi2_het_finite_n	3112573.0	PASS
+top_5pct_threshold	4.5168744700847885	PASS

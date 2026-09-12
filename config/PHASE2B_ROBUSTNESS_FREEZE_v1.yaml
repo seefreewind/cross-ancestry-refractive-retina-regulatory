@@ -1,0 +1,103 @@
+freeze_id: PHASE2B_ROBUSTNESS_FREEZE_v1
+freeze_status: POST_PRIMARY_ROBUSTNESS_EXECUTION_AUTHORIZED_2026-09-12
+project_status_at_start: PHASE2_ROUTE_B_PRIMARY_ENRICHMENT_NOT_SUPPORTED
+primary_result_source: results/phase2/PHASE2_DAR_HETEROGENEITY_ENRICHMENT.tsv
+phase2_freeze: config/PHASE2_ANALYSIS_FREEZE_v1.yaml
+phase1c2_input_freeze_id: SLDXR_FORMAL_INPUT_FREEZE_v1:6da435f42faa40f20ecf4b0b1e48d70782224704c86a829fe1e73c5269250b0a
+analysis_build: GRCh37.p13_reference_anchored
+
+scope:
+  stage: post_primary_robustness
+  objective:
+    - Test whether the Phase 2 negative DAR result is robust to LD and SNP dependence.
+    - Quantify the effect sizes that current DAR sample size can exclude or detect.
+    - Contextualize broad retinal OCR S-LDXR against genome-wide shared architecture.
+  stop_after_phase2b: true
+  next_allowed_stage: manuscript_preparation
+
+non_redefinition_rules:
+  - Phase 2B outputs cannot redefine the Phase 2 primary endpoint.
+  - All sensitivity results must be reported regardless of direction.
+  - No new ancestry-DAR definition is allowed.
+  - The DAR FDR threshold cannot be changed.
+  - The primary top 5% heterogeneity definition cannot be changed.
+  - No additional heterogeneity metrics may be screened for significance.
+  - The formal SNP universe cannot be reselected.
+  - Parameter tuning to obtain a positive result is prohibited.
+  - AFR is excluded from Phase 2B.
+  - Locus, CRE, motif, pathway, TWAS, SMR, MR, fine-mapping, regulon, and drug-target analyses are prohibited.
+
+primary_reproduction:
+  feature_matrix: data/processed/phase2/EUR_EAS_HETEROGENEITY_FEATURES.parquet
+  expected_or: 1.119047
+  expected_fisher_p: 0.366985
+  expected_continuous_mean_difference: 0.035122
+  expected_continuous_p: 0.710696
+  expected_permutation_observed_statistic: 0.064734
+  expected_permutation_empirical_p: 0.333666
+  tolerance: 1.0e-5
+  stop_if_mismatch: true
+
+ld_pruning:
+  tool: plink2
+  rule: label_blind_position_and_LD_only
+  populations:
+    - EUR
+    - EAS
+  conservative_set_definition: retain SNPs present in both EUR and EAS prune.in sets
+  window: 500kb
+  step_variant_count: 1
+  step_note: plink2 requires step=1 when the pruning window is specified in kilobases
+  sensitivity_thresholds:
+    - label: r2_lt_0p1
+      r2: 0.1
+      required: true
+    - label: r2_lt_0p01
+      r2: 0.01
+      required: false
+
+block_robustness:
+  block_resource: results/phase1c/SLDXR_BLOCK_JACKKNIFE.tsv
+  block_resource_type: project_standard_sldxr_200_jackknife_blocks
+  statistic: mean_chi2_het
+  comparison: blocks_with_at_least_one_DAR_SNP_vs_blocks_without_DAR_SNP
+  adjustment_covariates:
+    - log1p_block_snp_n
+    - mean_MAF_avg_ref
+    - mean_baseline_ld_base
+    - retinal_OCR_density
+
+effect_precision:
+  primary_binary_endpoint: top_5pct_chi2_het
+  large_enrichment_boundary_OR: 1.5
+  alpha: 0.05
+
+power:
+  endpoint: top_5pct_chi2_het
+  alpha: 0.05
+  powers:
+    - 0.8
+    - 0.9
+  comparator_event_rate_source: frozen_primary_matched_non_DAR_retinal_OCR
+  retrospective_observed_power_prohibited: true
+
+contextual_sldxr:
+  genomewide_source: results/phase1c/SLDXR_GENOMEWIDE_EUR_EAS_FORMAL.tsv
+  global_annotation_pilot_source: results/phase1c/SLDXR_GLOBAL_ANNOTATION_PILOT.tsv
+  all_retinal_ocr_role: formal_contextual
+  dar_role: underpowered_descriptive
+
+outputs:
+  primary_reproduction: results/phase2b/PRIMARY_RESULT_REPRODUCTION.tsv
+  ld_pruned_universe: results/phase2b/LD_PRUNED_SNP_UNIVERSE.tsv
+  ld_pruned_sensitivity: results/phase2b/LD_PRUNED_HETEROGENEITY_SENSITIVITY.tsv
+  block_summary: results/phase2b/LD_BLOCK_HETEROGENEITY_SUMMARY.tsv
+  block_robustness: results/phase2b/LD_BLOCK_ROBUSTNESS.tsv
+  effect_precision: results/phase2b/PRIMARY_EFFECT_SIZE_PRECISION.tsv
+  power_bounds: results/phase2b/DAR_POWER_BOUNDS.tsv
+  power_interpretation: reports/PHASE2B_POWER_INTERPRETATION.md
+  retinal_ocr_sldxr_context: results/phase2b/RETINAL_OCR_SLDXR_CONTEXT.tsv
+  cell_class_descriptive: results/phase2b/CELL_CLASS_DESCRIPTIVE_HETEROGENEITY.tsv
+  matching_balance_audit: results/phase2b/MATCHED_PERMUTATION_BALANCE_AUDIT.tsv
+  equivalence_boundary: results/phase2b/EQUIVALENCE_BOUNDARY.tsv
+  final_decision: reports/PHASE2B_FINAL_DECISION.md

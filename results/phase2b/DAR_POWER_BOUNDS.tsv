@@ -1,0 +1,3 @@
+power	alpha	case_N	comparator_N	comparator_event_rate	minimum_detectable_case_event_rate	detectable_absolute_risk_difference	minimum_detectable_OR	method
+0.8	0.05	1232	379279	0.05181673649213376	0.07095018969141692	0.01913345319928316	1.3974516484148798	prospective_two_sample_proportion_normal_approximation
+0.9	0.05	1232	379279	0.05181673649213376	0.07420707493491333	0.022390338442779566	1.466741850549181	prospective_two_sample_proportion_normal_approximation

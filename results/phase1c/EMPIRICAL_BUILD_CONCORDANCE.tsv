@@ -1,0 +1,7 @@
+dataset	assembly	sample_design	n_informative	n_discovery	n_holdout	exact_chromosome_match	exact_position_match	chr_pos_concordance	allele_compatible_n	allele_compatible_concordance	mismatch_n	missing_placement_n	holdout_n	holdout_chr_pos_concordance	holdout_allele_compatible_concordance
+EUR	GRCh37	deterministic_hash_discovery_holdout	124171	106455	17716	124171	124171	1.0	124171	1.0	0	29829	17716	1.0	1.0
+EUR	GRCh38	deterministic_hash_discovery_holdout	124171	106455	17716	124171	1127	0.009076193314058838	124171	1.0	0	29829	17716	0.009031384059607135	1.0
+EAS	GRCh37	deterministic_hash_discovery_holdout	123288	105593	17695	123288	123288	1.0	123288	1.0	0	30712	17695	1.0	1.0
+EAS	GRCh38	deterministic_hash_discovery_holdout	123288	105593	17695	123288	1155	0.00936830835117773	123288	1.0	0	30712	17695	0.009381181124611473	1.0
+AFR	GRCh37	deterministic_hash_discovery_holdout	127175	108870	18305	127175	127175	1.0	127175	1.0	0	26825	18305	1.0	1.0
+AFR	GRCh38	deterministic_hash_discovery_holdout	127175	108870	18305	127175	1239	0.00974248083349715	127175	1.0	0	26825	18305	0.010270417918601475	1.0

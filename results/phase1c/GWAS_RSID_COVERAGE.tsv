@@ -1,0 +1,5 @@
+dataset	total_variants	rsid_present	valid_rsid	unique_valid_rsid	duplicated_rsid_n	non_rsid_marker	biallelic_snp_with_rsid	indel_or_non_snp_with_rsid	hm3_reference_rsid_n	hm3_overlap_valid_rsid_n	hm3_overlap_rsid_coverage	rsid_coverage	biallelic_snp_rsid_coverage	rsid_rescue_status
+EUR	5590053	5590053	5590053	5589835	174	0	5260419	329634	1190321	741610	1	1.00000000	0.94103204	PASS
+EAS	4739897	4739897	4739897	4738871	827	0	4324533	415364	1190321	661178	1	1.00000000	0.91236856	PASS
+AFR	9519284	9519284	9519284	9517786	1230	0	8765891	753393	1190321	745031	1	1.00000000	0.92085613	PASS
+CROSS	9555806	9555806	9555806	9555806	0	0	8787134	768672	1190321	745096	1	1.00000000	0.91955969	PASS

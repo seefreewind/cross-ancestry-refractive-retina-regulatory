@@ -1,0 +1,2 @@
+resource_name	source_build	target_build	source	url	file	sha256	validation_status	notes
+UCSC_hg38ToHg19_chain	hg38	GRCh37.p13 (hg19 coordinate convention)	UCSC liftOver chain	https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg19.over.chain.gz	data/raw/retina/hg38ToHg19.over.chain.gz	14a712e8e147d9fc8e9d87d51977b46f6f8ddb93efbe5d0843d86b6205f587b1	gzip_test_passed	Used only after empirical GRCh37 GWAS build adjudication; raw HRCA intervals remain unchanged.

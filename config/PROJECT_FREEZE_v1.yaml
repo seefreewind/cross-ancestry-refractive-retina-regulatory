@@ -1,0 +1,85 @@
+project: "Cross-ancestry genetic effects of refractive error × retinal regulatory architecture"
+freeze_version: "v1"
+freeze_date: "2026-09-06"
+scope: "Phase 0-1 data feasibility, GWAS QC, harmonization, retinal annotation audit, and technical feasibility"
+primary_ancestry_comparison:
+  - EUR
+  - EAS
+secondary_ancestry:
+  - AFR
+primary_gwas:
+  phenotype: "refractive error / mean spherical equivalent as defined by Cheng et al. 2026"
+  required_datasets:
+    - EUR_meta_no23andMe
+    - EAS_meta
+    - AFR_meta
+    - Cross_ancestry_EUR_EAS_AFR_no23andMe
+  required_representation: "genome-wide summary statistics; no lead-SNP-only tables"
+  effect_comparison_rule: "Do not compare raw beta across ancestries unless the source definition and scale are verified; use signed Z only when effect-allele harmonization is valid."
+harmonization:
+  preferred_key: "chr:position:ref:alt"
+  fallback_key: "rsID only after allele and coordinate checks"
+  palindromic_policy: "exclude A/T and C/G variants from primary harmonization when ancestry-specific frequency alignment cannot resolve strand"
+  high_quality_match_rate_pass: 0.90
+  conditional_match_rate_lower: 0.80
+retina:
+  preferred_resource: "Human Retina Cell Atlas / GSE281526"
+  required_objects:
+    - pan_retinal_OCR
+    - cell_class_OCR
+    - ancestry_associated_DAR
+  primary_cell_classes:
+    - Rod
+    - Cone
+    - Bipolar
+    - Amacrine
+    - RGC
+    - Muller_glia
+    - Horizontal
+    - Astrocyte
+    - Microglia
+    - RPE
+  stable_annotation_options:
+    - all_tested_OCR_minus_ancestry_DAR
+    - ancestry_effect_near_zero_with_narrow_CI
+    - matched_non_DAR_OCR
+  ancestry_definition_rule: "Preserve the original study's genetic ancestry definition; do not substitute self-reported ethnicity/race."
+build:
+  target: "GRCh38 if supported by the validated downstream LDSC/S-LDXR reference files; otherwise retain source build and mark unresolved"
+  liftover_success_pass: 0.95
+power:
+  strong_global_ancestry_DAR_usable_snps: 5000
+  conditional_global_ancestry_DAR_usable_snps_lower: 1000
+  usable_snp_definitions:
+    hm3_common: "HapMap3 and EUR-EAS shared SNPs with MAF > 0.05 where frequency data are available"
+    hm3_maf001: "HapMap3 and EUR-EAS shared SNPs with MAF > 0.01 where frequency data are available"
+positive_control:
+  required_matching_variables:
+    - MAF
+    - LD_score
+    - TSS_distance
+    - local_SNP_density
+  interpretation: "QC sanity check only; not a manuscript endpoint"
+ldsc:
+  h2_z_preferred_EUR: 7
+  h2_z_preferred_EAS: 4
+  eurasian_ld_reference_rule: "Do not substitute EUR LD reference for EAS"
+phase2_preregistration:
+  primary_annotations:
+    - all_retinal_OCR
+    - ancestry_sensitive_retinal_OCR
+    - ancestry_stable_or_matched_non_DAR_retinal_OCR
+  primary_endpoint: "S-LDXR lambda_squared"
+  hypothesis: "lambda_squared ancestry-sensitive < lambda_squared stable"
+  global_multiple_testing: "Bonferroni or FDR must be fixed before Phase 2"
+  cell_class_multiple_testing: "Benjamini-Hochberg FDR 5%"
+  afr_role: "secondary / sensitivity only"
+phase2_allowed_only_after: "Phase 0-1 GO or CONDITIONAL GO with global EUR-EAS analysis technically feasible"
+prohibited_in_phase0_1:
+  - MR
+  - PRS_modeling
+  - pathway_fishing
+  - drug_repurposing
+  - machine_learning_classification
+  - arbitrary_composite_scores
+  - manuscript_writing

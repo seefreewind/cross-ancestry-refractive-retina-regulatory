@@ -1,0 +1,6 @@
+section	metric	value	detail
+GWAS_QC	formal_shared_SNP_N	3112573.0	Phase 1C.2 formal shared universe
+LDSC	EUR_h2	0.1219	ancestry-matched
+LDSC	EAS_h2	0.1494	ancestry-matched
+S-LDXR	genomewide_GCORSQ	1.00994483937748	formal genomewide
+S-LDXR	genomewide_GCORSQ_SE	0.1082755037285778	formal genomewide
