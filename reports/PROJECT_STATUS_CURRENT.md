@@ -106,7 +106,7 @@ HRCA S19 中的 East Asian ancestry-specific DAR 在部分细胞类别中较稀�
 
 S-LDXR 软件已克隆至：
 
-`/Users/zy/.codex/tools/s-ldxr`
+`$S_LDXR_REPO`
 
 当前 S-LDXR 运行环境已可用，paired score 生成命令正在实际运行。正式分析状态仍取决于全部行身份、数值、score universe 和 freeze gate，而非软件能否启动。
 

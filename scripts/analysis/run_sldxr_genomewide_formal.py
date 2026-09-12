@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import math
 import re
+import os
 import subprocess
 from pathlib import Path
 
@@ -16,7 +17,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 FREEZE = ROOT / "config/SLDXR_FORMAL_INPUT_FREEZE_v1.yaml"
-S_LDXR = Path("/Users/zy/.codex/tools/s-ldxr/s-ldxr.py")
+S_LDXR = Path(os.environ.get("S_LDXR", "s-ldxr.py"))
 RAW_OUT = ROOT / "results/phase1c/sldxr_formal/SLDXR_GENOMEWIDE_EUR_EAS_RAW.tsv"
 FORMAL_OUT = ROOT / "results/phase1c/SLDXR_GENOMEWIDE_EUR_EAS_FORMAL.tsv"
 RUNNER_LOG = ROOT / "results/phase1c/sldxr_formal/SLDXR_GENOMEWIDE_EUR_EAS_RUNNER.log"

@@ -13,12 +13,13 @@ from __future__ import annotations
 import argparse
 import re
 import shlex
+import os
 import subprocess
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-S_LDXR = Path("/Users/zy/.codex/tools/s-ldxr/s-ldxr.py")
+S_LDXR = Path(os.environ.get("S_LDXR", "s-ldxr.py"))
 SUMSTATS = [
     ROOT / "data/interim/sldxr_formal/EAS_sumstats_aligned.gz",
     ROOT / "data/interim/sldxr_formal/EUR_sumstats_aligned.gz",

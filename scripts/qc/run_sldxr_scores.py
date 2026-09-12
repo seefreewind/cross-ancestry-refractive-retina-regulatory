@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 from pathlib import Path
 
@@ -11,7 +12,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[2]
-S_LDXR = Path("/Users/zy/.codex/tools/s-ldxr/s-ldxr.py")
+S_LDXR = Path(os.environ.get("S_LDXR", "s-ldxr.py"))
 QC = ROOT / "results/phase1c/SLDXR_REFERENCE_QC.tsv"
 ANNOT_ROOT = ROOT / "data/interim/sldxr_annotations"
 SCORE_ROOT = ROOT / "data/interim/sldxr_scores"

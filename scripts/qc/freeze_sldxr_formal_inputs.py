@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,7 +15,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "config/SLDXR_FORMAL_INPUT_FREEZE_v1.yaml"
-S_LDXR_REPO = Path("/Users/zy/.codex/tools/s-ldxr")
+S_LDXR_REPO = Path(os.environ.get("S_LDXR_REPO", "s-ldxr"))
 
 
 def sha256(path: Path) -> str:

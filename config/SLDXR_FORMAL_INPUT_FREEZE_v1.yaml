@@ -25,7 +25,7 @@ reference_source:
   dbsnp_anchor: NCBI dbSNP Build 151 GRCh37.p13
 software:
   name: S-LDXR
-  repository: /Users/zy/.codex/tools/s-ldxr
+  repository: $S_LDXR_REPO
   git_commit: ab39882d692d9b0f528a0ea21103866dcd1dd2f8
 formal_command_inputs:
   gcor:

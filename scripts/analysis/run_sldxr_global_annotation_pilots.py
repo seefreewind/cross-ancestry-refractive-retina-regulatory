@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import math
 import re
+import os
 import subprocess
 from pathlib import Path
 
@@ -14,7 +15,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[2]
-S_LDXR = Path("/Users/zy/.codex/tools/s-ldxr/s-ldxr.py")
+S_LDXR = Path(os.environ.get("S_LDXR", "s-ldxr.py"))
 FREEZE = ROOT / "config/SLDXR_FORMAL_INPUT_FREEZE_v1.yaml"
 FORMAL = ROOT / "results/phase1c/SLDXR_GENOMEWIDE_EUR_EAS_FORMAL.tsv"
 BLOCK_QC = ROOT / "results/phase1c/SLDXR_BLOCK_JACKKNIFE.tsv"

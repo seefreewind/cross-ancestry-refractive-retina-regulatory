@@ -19,7 +19,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[2]
-S_LDXR_REPO = Path("/Users/zy/.codex/tools/s-ldxr")
+S_LDXR_REPO = Path(os.environ.get("S_LDXR_REPO", "s-ldxr"))
 sys.path.insert(0, str(S_LDXR_REPO))
 
 from src.estimation import create_block  # noqa: E402

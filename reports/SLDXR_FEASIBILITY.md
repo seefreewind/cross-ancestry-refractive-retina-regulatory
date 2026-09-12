@@ -8,7 +8,7 @@ The requested estimand is the stratified squared trans-ancestry genetic-correlat
 
 The public S-LDXR repository was cloned at:
 
-`/Users/zy/.codex/tools/s-ldxr`
+`$S_LDXR_REPO`
 
 Repository commit: `ab39882d692d9b0f528a0ea21103866dcd1dd2f8`
 

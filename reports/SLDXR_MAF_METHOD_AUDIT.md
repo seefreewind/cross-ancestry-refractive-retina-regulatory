@@ -8,16 +8,16 @@ Shi H, Gazal S, Kanai M, Koch EM, Schoech AP, et al. 2021. Population-specific c
 
 ## Official repository and version
 
-Repository inspected locally: `/Users/zy/.codex/tools/s-ldxr`
+Repository inspected locally: `$S_LDXR_REPO`
 
 Git commit: `ab39882d692d9b0f528a0ea21103866dcd1dd2f8`
 
 Local documentation inspected:
 
-- `/Users/zy/.codex/tools/s-ldxr/README.md`
-- `/Users/zy/.codex/tools/s-ldxr/docs/gcorsq.md`
-- `/Users/zy/.codex/tools/s-ldxr/docs/input_format.md`
-- `/Users/zy/.codex/tools/s-ldxr/s-ldxr.py`
+- `$S_LDXR_REPO/README.md`
+- `$S_LDXR_REPO/docs/gcorsq.md`
+- `$S_LDXR_REPO/docs/input_format.md`
+- `$S_LDXR_REPO/s-ldxr.py`
 
 ## Exact method wording and cutoff evidence
 

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import os
 import subprocess
 from pathlib import Path
 
@@ -14,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_REF = ROOT / "data/raw/ld_reference"
 REF_ROOT = ROOT / "data/interim/ld_reference"
 OUT = ROOT / "results/phase1/LDSC_H2_SUMMARY.tsv"
-LDSC = "/Users/zy/.local/bin/ldsc.py"
+LDSC = os.environ.get("LDSC", "ldsc.py")
 
 
 def archive_complete(path: Path, expected_bytes: int) -> bool:

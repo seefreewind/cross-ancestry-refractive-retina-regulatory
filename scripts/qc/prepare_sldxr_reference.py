@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import re
+import os
 import subprocess
 from pathlib import Path
 
@@ -17,7 +18,7 @@ RAW = ROOT / "data/raw/ld_reference"
 INTERIM = ROOT / "data/interim/sldxr_reference"
 QC_OUT = ROOT / "results/phase1c/SLDXR_REFERENCE_QC.tsv"
 PAIRING_QC = ROOT / "results/phase1c/SLDXR_PANEL_PAIRING.tsv"
-PLINK2 = "/Users/zy/.local/bin/plink2"
+PLINK2 = os.environ.get("PLINK2", "plink2")
 
 ARCHIVES = {
     "EUR": ("1000G_Phase3_plinkfiles.tgz", 288277344, "a7773ab485827b533cb300c76356d76b"),

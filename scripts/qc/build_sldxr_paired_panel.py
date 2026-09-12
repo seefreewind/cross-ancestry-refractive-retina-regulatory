@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+import os
 import subprocess
 from pathlib import Path
 
@@ -17,7 +18,7 @@ OUT = INTERIM / "paired_plink_v2"
 TEMP = INTERIM / "paired_pgen_v2"
 LISTS = INTERIM / "paired_variant_lists"
 QC_OUT = ROOT / "results/phase1c/SLDXR_PANEL_PAIRING.tsv"
-PLINK2 = "/Users/zy/.local/bin/plink2"
+PLINK2 = os.environ.get("PLINK2", "plink2")
 
 
 def companion(prefix: Path, extension: str) -> Path:
