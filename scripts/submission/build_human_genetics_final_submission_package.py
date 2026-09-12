@@ -853,7 +853,7 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
         encoding="utf-8",
     )
 
-    zenodo_api_ok, zenodo_target = check_url("https://zenodo.org/api/records/22726972")
+    zenodo_api_ok, zenodo_target = check_url(ZENODO_URL)
     zenodo_meta = {}
     if zenodo_api_ok:
         try:
@@ -887,7 +887,8 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
                     txt = p.read_text(encoding="utf-8", errors="ignore")
                 except Exception:
                     txt = ""
-                local_path_pattern = "|".join([r"/Vol" + "umes/", r"/Us" + "ers/", r"C:\\\\", r"Desk" + "top/", r"Down" + "loads/"])
+                slash = chr(47)
+                local_path_pattern = "|".join([slash + "Vol" + "umes" + slash, slash + "Us" + "ers" + slash, r"C:\\\\", "Desk" + "top" + slash, "Down" + "loads" + slash])
                 if re.search(local_path_pattern, txt):
                     local_path_hits.append(str(p.relative_to(GITHUB_RELEASE)))
     (REPORTS / "FINAL_REPOSITORY_AUDIT.md").write_text(
