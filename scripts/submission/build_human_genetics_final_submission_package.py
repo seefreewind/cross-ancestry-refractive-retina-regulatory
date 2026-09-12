@@ -878,6 +878,8 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
     local_path_hits = []
     if GITHUB_RELEASE.exists():
         for p in GITHUB_RELEASE.rglob("*"):
+            if ".git" in p.parts:
+                continue
             if p.is_file() and (p.name.startswith("._") or p.suffix in {".parquet", ".gz", ".log", ".docx"} or "/data/raw/" in str(p) or "/data/interim/" in str(p)):
                 restricted.append(str(p.relative_to(GITHUB_RELEASE)))
             if p.is_file() and p.suffix.lower() in {".md", ".py", ".r", ".sh", ".yaml", ".yml", ".toml", ".txt", ".json"}:
