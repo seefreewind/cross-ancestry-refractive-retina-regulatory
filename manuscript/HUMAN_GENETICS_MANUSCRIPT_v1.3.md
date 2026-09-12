@@ -142,7 +142,7 @@ All analyses used publicly available datasets and reference resources. Refractiv
 
 ## Code availability
 
-The analysis scripts, fixed configuration files, QC records and figure-ready tables will be made available in a public repository before submission: [repository URL to be added before submission]. The current analysis package contains reproducible harmonization/QC scripts, S-LDXR scripts, heterogeneity scripts and robustness scripts.
+The analysis scripts, fixed configuration files, QC records and figure-ready tables will be made available in a public repository before submission: https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory. The current analysis package contains reproducible harmonization/QC scripts, S-LDXR scripts, heterogeneity scripts and robustness scripts.
 
 ## Acknowledgements
 

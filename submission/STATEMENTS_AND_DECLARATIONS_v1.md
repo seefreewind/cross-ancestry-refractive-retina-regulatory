@@ -18,7 +18,7 @@ This study analyzed publicly available summary-level and aggregate datasets and 
 
 ## Code availability
 
-Analysis scripts, configuration files, QC records and figure-generation code will be made available in a public repository before submission: [repository URL to be added before submission].
+Analysis scripts, configuration files, QC records and figure-generation code will be made available in a public repository before submission: https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory.
 
 ## Ethics statement
 

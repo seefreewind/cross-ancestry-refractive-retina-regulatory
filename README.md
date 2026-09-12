@@ -39,6 +39,10 @@ Raw and large third-party data are not redistributed here. This includes public 
 
 This study uses publicly available summary-level and aggregate datasets and involved no new participant recruitment. Provider-restricted or license-governed files should be downloaded by users from the original repositories under the applicable terms. The repository is intended to make the analysis logic, QC decisions and manuscript summary outputs auditable without redistributing restricted source data.
 
+## Repository URL
+
+https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory
+
 ## Citation status
 
-The manuscript currently requires author final review before journal submission, especially repository URL, author metadata, and final institutional ethics wording.
+The manuscript currently requires author final review before journal submission, especially final institutional ethics wording and journal metadata checks.
