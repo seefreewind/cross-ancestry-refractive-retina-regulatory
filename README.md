@@ -18,7 +18,8 @@ The primary manuscript-facing S-LDXR estimates use MAF > 0.05. Broader MAF > 0.0
 - `config/`: fixed analysis configuration files used to define inputs and robustness checks.
 - `metadata/`: resource inventories and source metadata tables.
 - `results/`: small machine-readable summary outputs used in the manuscript, excluding large raw/intermediate arrays.
-- `figures/human_genetics/`: manuscript figures exported as PDF, SVG and 600-dpi PNG.
+- `figures/final_v2/`: final refined manuscript figures exported as PDF, SVG and 600-dpi PNG, plus a contact sheet.
+- `figures/human_genetics/` and `figures/archive/`: earlier figure versions retained for provenance.
 - `manuscript/`, `supplement/`, `submission/`: current manuscript, supplement, tables, declarations and cover-letter materials.
 - `reports/`: provenance, QC, reference and final submission audits.
 
@@ -34,6 +35,18 @@ Raw and large third-party data are not redistributed here. This includes public 
 - `submission/tables/Table1_GWAS_analysis_characteristics.tsv`
 - `submission/tables/Table2_main_cross_ancestry_architecture.tsv`
 - `submission/tables/Table3_DAR_heterogeneity_tests.tsv`
+- `figures/final_v2/Figure1_study_design_FINAL.pdf`
+- `figures/final_v2/Figure2_cross_ancestry_architecture_FINAL.pdf`
+- `figures/final_v2/Figure3_DAR_heterogeneity_FINAL.pdf`
+- `figures/final_v2/FigureS1_DAR_SLDXR_FINAL.pdf`
+- `figures/final_v2/MAIN_FIGURES_CONTACT_SHEET.pdf`
+
+## Final figure/table audits
+
+- `reports/FIGTAB_SNP_COUNT_AUDIT.md`
+- `reports/FINAL_FIGURE_VISUAL_HONESTY_AUDIT.md`
+- `reports/FINAL_FIGURE_LOGIC_AUDIT.md`
+- `reports/FIGURE_SIZE_READABILITY_AUDIT.md`
 
 ## Data availability boundary
 

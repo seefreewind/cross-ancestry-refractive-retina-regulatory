@@ -1,0 +1,18 @@
+cell_class	ancestry_label	n_DAR_rows	n_unique_intervals	n_fdr_le_0.05	n_log2fc_ge_0.5	n_fdr_le_0.05_and_log2fc_ge_0.5	min_fdr	median_log2fc	build	source
+Amacrine	African	24	24	24	24	24	0.000138068446302763	0.844129443759361	hg38	HRCA Supplementary Table S19
+Bipolar	Admixed American	7	7	7	7	7	0.0027122708654127	1.41296073830023	hg38	HRCA Supplementary Table S19
+Bipolar	African	11	11	11	11	11	0.000240588060454755	0.854448256564886	hg38	HRCA Supplementary Table S19
+Bipolar	East Asian	1	1	1	1	1	0.0373845144280643	2.09368238455284	hg38	HRCA Supplementary Table S19
+Cone	Admixed American	237	237	237	237	237	2.39645675333007e-05	1.47143988180073	hg38	HRCA Supplementary Table S19
+Cone	African	339	339	339	339	339	2.87646642292246e-09	1.45772505672419	hg38	HRCA Supplementary Table S19
+Horizontal	Admixed American	887	887	887	887	887	9.090614379889e-09	1.53049032197041	hg38	HRCA Supplementary Table S19
+Horizontal	African	112	112	112	112	112	3.44420763341264e-06	0.961773410835307	hg38	HRCA Supplementary Table S19
+Horizontal	East Asian	3	3	3	3	3	1.6001772173095e-10	2.35340328533737	hg38	HRCA Supplementary Table S19
+Muller_glia	Admixed American	211	211	211	211	211	0.00131776157252649	1.83745510390988	hg38	HRCA Supplementary Table S19
+Muller_glia	African	12	12	12	12	12	0.00021251020605629	0.985412695593322	hg38	HRCA Supplementary Table S19
+Muller_glia	East Asian	23	23	23	23	23	0.000125213939968541	1.8743896880731	hg38	HRCA Supplementary Table S19
+RGC	African	7	7	7	7	7	0.000336976265912546	0.69379337288781	hg38	HRCA Supplementary Table S19
+RGC	East Asian	328	328	328	328	328	7.11244559755027e-05	2.22105476451665	hg38	HRCA Supplementary Table S19
+Rod	Admixed American	4	4	4	4	4	0.0256942630385413	1.29153090621244	hg38	HRCA Supplementary Table S19
+Rod	African	17	17	17	17	17	2.01956655540367e-11	1.17497304967426	hg38	HRCA Supplementary Table S19
+Rod	East Asian	5	5	5	5	5	3.54415196259478e-05	2.66006451996766	hg38	HRCA Supplementary Table S19

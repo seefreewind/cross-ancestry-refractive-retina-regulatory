@@ -1,0 +1,10 @@
+stage	n
+EUR original	5590053
+EUR valid unique biallelic SNP	5260419
+EAS valid unique biallelic SNP	4324243
+matched at CHR:POS	3863376
+mutually available non-palindromic at CHR:POS	3262663
+allele matched non-palindromic	3262168
+palindromic excluded	600713
+unresolved allele mismatch	671
+final usable shared SNPs	3262168

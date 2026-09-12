@@ -1,0 +1,21 @@
+annotation_source	cell_class	ancestry_label	build	interval_n	total_bp	harmonized_snp_n_coordinate_diagnostic	eur_gws_snp_n_coordinate_diagnostic	eas_gws_snp_n_coordinate_diagnostic	status	notes
+HRCA_S19_DAR	Amacrine	all_table_labels	hg38	24	12024	14	0	0	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	Bipolar	all_table_labels	hg38	19	9519	9	0	0	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	Cone	all_table_labels	hg38	576	288576	436	3	2	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	Horizontal	all_table_labels	hg38	1002	502002	697	4	0	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	Muller_glia	all_table_labels	hg38	246	123246	147	0	0	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	RGC	all_table_labels	hg38	335	167835	198	2	1	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR	Rod	all_table_labels	hg38	26	13026	22	4	0	CONDITIONAL_BUILD_UNRESOLVED	Author-defined ancestry-DAR intervals; label-specific rows in ANCESTRY_DAR_AUDIT.tsv.
+HRCA_S19_DAR_UNION	global	all_table_labels	hg38	2227	1115727	1466	13	3	CONDITIONAL_BUILD_UNRESOLVED	Union across S19 cell classes; coordinate diagnostic only.
+HRCA_S12K_UNION_OCR	global	all	hg38	700146	350773146	410516	2980	230	CONDITIONAL_BUILD_UNRESOLVED	Union OCR table S12K; hg38 title.
+HRCA_S12K_STABLE_NON_DAR	global	all	hg38	697837	349616337	408977	2967	229	CONDITIONAL_BUILD_UNRESOLVED	Operational non-DAR control: S12K intervals with no overlap with S19 DAR intervals.
+HRCA_S12A_OCR_COUNTS	Amacrine	all	hg38	215994					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Astrocyte	all	hg38	158797					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Bipolar	all	hg38	211077					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Cone	all	hg38	218488					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Horizontal	all	hg38	167646					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Muller_glia	all	hg38	167637					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Microglia	all	hg38	176600					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	RGC	all	hg38	205224					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Rod	all	hg38	135675					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.
+HRCA_S12A_OCR_COUNTS	Union Peak	all	hg38	700146					REPORTED_COUNT_NO_COORDINATES	Table S12A count; coordinate table is represented by class-specific S12B-J sheets or union S12K.

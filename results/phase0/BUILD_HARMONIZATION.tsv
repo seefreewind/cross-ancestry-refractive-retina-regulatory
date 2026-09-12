@@ -1,0 +1,10 @@
+resource	resource_file	reported_build	build_evidence	status	phase0_action
+EUR GWAS	EUR_meta_no23andMe.fastGWAz	Unresolved	Raw header has CHR/POS but no explicit build; publication/source audit not sufficient	Blocking	Do not label coordinate overlaps as validated until build is resolved
+EAS GWAS	EAS_meta.fastGWAz	Unresolved	Raw header has CHR/POS but no explicit build; publication/source audit not sufficient	Blocking	Do not label coordinate overlaps as validated until build is resolved
+AFR GWAS	AFR_meta.fastGWAz	Unresolved	Raw header has CHR/POS but no explicit build; publication/source audit not sufficient	Blocking	Secondary only; no ancestry-specific coordinate claims
+Cross-ancestry GWAS	Cross_ancestry_EUR_EAS_AFR_no23andMe	Unresolved	METAL MarkerName/allele/Z file has no explicit build	Blocking	Use for provenance only in Phase 0
+HRCA S12 OCR	Table S12A and S12K	hg38	Table titles explicitly state hg38	Ready for coordinate audit	Retain hg38 labels
+HRCA S19 ancestry DAR	Table S19A-G	hg38	Table titles explicitly state hg38; MinerU methods confirm hg38 DAR resource	Ready for coordinate audit	Retain hg38 labels and ancestry labels
+HRCA S20 fine-mapped variants	Table S20A-G	hg19	Table titles explicitly state hg19	Not used in Phase 0 primary annotation	Do not mix with S12/S19 without liftover
+HRCA S21 fine-mapped eQTL variants	Table S21	hg19	Table title/resource notes identify hg19	Not used in Phase 0 primary annotation	Do not mix with S12/S19 without liftover
+LDSC 1000G baselineLD v2.2	EUR/EAS reference bundles	GRCh37-compatible LDSC reference convention	Reference package identity; final compatibility requires GWAS-build resolution	Conditional	Use matching EUR/EAS references only after compatibility check
