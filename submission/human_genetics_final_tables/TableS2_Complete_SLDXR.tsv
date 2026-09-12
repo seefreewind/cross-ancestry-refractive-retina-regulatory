@@ -1,0 +1,6 @@
+Analysis	MAF threshold	Count definition	Count	Metric	Estimate	SE	95% CI	Jackknife blocks
+Genome-wide	> 0.05	Effective regression SNP count	3,112,573	S-LDXR GCORSQ	1.028	0.100	0.832–1.223	200
+All retinal OCR	> 0.05	Annotation SNP count passing paired MAF > 0.05	544,077	S-LDXR GCORSQ	0.948	0.097	0.758–1.138	200
+Genome-wide	> 0.01	Effective regression SNP count	3,112,573	S-LDXR GCORSQ	1.010	0.108	0.798–1.222	200
+All retinal OCR	> 0.01	Analysis-overlap annotation SNP count	380,615	S-LDXR GCORSQ	0.935	0.101	0.737–1.134	200
+Ancestry-associated DAR descriptive	> 0.01	Analysis-overlap annotation SNP count	1,232	S-LDXR GCORSQ	0.571	0.577	-0.560–1.702	200

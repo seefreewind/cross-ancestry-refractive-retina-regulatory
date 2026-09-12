@@ -1,0 +1,3 @@
+Resource	Source build	Target build	Input intervals	Mapped intervals	Width-preserved intervals	Mapping rate	Width-preservation rate	Unmapped or ambiguous	Status
+HRCA_ANCESTRY_DAR	hg38	GRCh37.p13 (hg19 coordinate convention)	2228	2221	2219	0.99685817	0.9990995	7	REVIEW_REQUIRED
+HRCA_UNION_OCR	hg38	GRCh37.p13 (hg19 coordinate convention)	700146	699252	698037	0.99872312	0.99826243	894	REVIEW_REQUIRED

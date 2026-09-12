@@ -1,0 +1,7 @@
+Dataset	Assembly	Informative variants	Chr-pos concordance	Allele-compatible concordance	Mismatches	Holdout variants	Holdout chr-pos concordance	Holdout allele-compatible concordance
+EUR	GRCh37	124171	1.0	1.0	0	17716	1.0	1.0
+EUR	GRCh38	124171	0.0090761933140588	1.0	0	17716	0.0090313840596071	1.0
+EAS	GRCh37	123288	1.0	1.0	0	17695	1.0	1.0
+EAS	GRCh38	123288	0.0093683083511777	1.0	0	17695	0.0093811811246114	1.0
+AFR	GRCh37	127175	1.0	1.0	0	18305	1.0	1.0
+AFR	GRCh38	127175	0.0097424808334971	1.0	0	18305	0.0102704179186014	1.0

@@ -1,19 +1,13 @@
-# Final red-team review
+# Human Genetics final reviewer red-team
 
 ## Reviewer 1: statistical genetics
 
-Major concern: S-LDXR GCORSQ estimates near or above one need bounded interpretation. Response: v1.2 states that boundary-adjacent estimates are unbounded estimator behavior and reports MAF > 0.05 as the method-standard threshold, with MAF > 0.01 as supporting analysis.
+Major concerns: (1) source-effect scale heterogeneity may not equal causal-effect heterogeneity; (2) DAR denominator is small; (3) S-LDXR annotation-specific estimates can be sensitive to count definitions. Minor concerns: clarify MAF thresholds, keep full precision in supplement, define χ²het once. Likely recommendation: major revision or cautious review.
 
-Major concern: The EUR-EAS heterogeneity statistic assumes zero covariance and source-effect comparability. Response: Methods define it as association-effect heterogeneity on the released source-effect scale and state the zero-covariance assumption. Residual overlap is listed as a limitation.
+## Reviewer 2: population genetics
 
-## Reviewer 2: human genetics/population genetics
+Major concerns: (1) ancestry labels require careful framing; (2) EUR–EAS scope limits generalization; (3) prediction portability is not directly decomposed. Minor concerns: avoid race/ancestry overstatement, report no raw data redistribution, keep Popcorn and S-LDXR estimands separate. Likely recommendation: review after clarification.
 
-Major concern: Ancestry-linked chromatin differences should not be interpreted as innate biological categories. Response: v1.2 uses ancestry labels as sampled-population descriptors and cites ancestry-reporting guidance. The interpretation stays at the statistical annotation level.
+## Reviewer 3: retinal genomics
 
-Major concern: AFR and other populations are absent from the formal test. Response: v1.2 restricts conclusions to EUR-EAS and states that other populations require larger and compatible resources.
-
-## Reviewer 3: retinal genetics
-
-Major concern: DARs are not mechanistically linked to refractive-error loci. Response: v1.2 avoids CRE-to-gene, motif, pathway and locus mechanism claims. Functional experiments are OUT_OF_SCOPE_FOR_CURRENT_STUDY because the existing analyses do not identify a large global DAR enrichment or a prioritized causal locus.
-
-Major concern: Retina is only one component of refractive development. Response: v1.2 lists tissue and developmental-stage specificity as limitations.
+Major concerns: (1) adult retinal OCRs may miss developmental states; (2) chromatin accessibility is not causal regulation; (3) cell-type-specific mechanisms are not resolved. Minor concerns: clarify HRCA annotation source, keep Supplementary Fig. S1 descriptive, avoid mechanism claims. Likely recommendation: review with restrained framing.

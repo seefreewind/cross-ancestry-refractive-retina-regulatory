@@ -1,0 +1,6 @@
+Quantity	Value	95% CI	P	Notes
+Primary top-5% OR	1.119	0.867–1.423	0.367	Primary association-effect heterogeneity endpoint
+Comparator event rate	5.18%			19,653 / 379,279
+80% MDE	1.397			Alpha = 0.05
+90% MDE	1.467			Alpha = 0.05
+Large-effect boundary	1.500			Reference boundary; primary CI upper bound below boundary

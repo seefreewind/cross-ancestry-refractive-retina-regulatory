@@ -1,0 +1,8 @@
+Resource / set	Ancestry / context	Source or definition	Analysis information	Role
+EUR GWAS	European	Public no-23andMe refractive-error GWAS summary statistics	Full source study EUR total = 1,495,159; public file retained variant-specific effective N	Input GWAS
+EAS GWAS	East Asian	Public EAS refractive-error GWAS summary statistics	Source-study total = 121,172; public file retained variant-specific N	Input GWAS
+Harmonized EUR–EAS SNP set	EUR–EAS	Effect-aligned shared set after biallelic, palindromic, duplicate and allele checks	3,262,168 harmonized SNPs	Effect-comparison set
+Cross-ancestry analysis SNP set	EUR–EAS	Exact paired-reference, frequency, score and annotation alignment	3,112,573 analysis SNPs	S-LDXR and heterogeneity universe
+Broad retinal OCR	Retinal regulatory context	Union retinal open-chromatin annotation from the Human Retina Cell Atlas	380,615 analysis-overlap annotation SNPs	Broad retinal regulatory background
+Ancestry-associated DAR	Atlas-defined ancestry-associated regulatory annotation	Differentially accessible retinal regions using the source atlas definition	1,232 analysis-overlap annotation SNPs	Primary tested annotation
+Matched non-DAR retinal OCR	Retinal comparator	Retinal OCR SNPs not overlapping ancestry-associated DAR intervals	379,279 analysis-overlap annotation SNPs	Matched regulatory comparator
