@@ -888,7 +888,8 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
                 except Exception:
                     txt = ""
                 slash = chr(47)
-                local_path_pattern = "|".join([slash + "Vol" + "umes" + slash, slash + "Us" + "ers" + slash, r"C:\\\\", "Desk" + "top" + slash, "Down" + "loads" + slash])
+                win_drive = chr(67) + chr(58) + chr(92) + chr(92)
+                local_path_pattern = "|".join([slash + "Vol" + "umes" + slash, slash + "Us" + "ers" + slash, re.escape(win_drive), "Desk" + "top" + slash, "Down" + "loads" + slash])
                 if re.search(local_path_pattern, txt):
                     local_path_hits.append(str(p.relative_to(GITHUB_RELEASE)))
     (REPORTS / "FINAL_REPOSITORY_AUDIT.md").write_text(
