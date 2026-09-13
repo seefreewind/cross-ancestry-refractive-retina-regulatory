@@ -1,0 +1,31 @@
+date: '2026-09-13T09:00:38'
+mode: SUBMISSION MODE
+manuscript_version: Human Genetics final submission package
+scientific_analysis_status: FROZEN
+discovery_analysis_status: STOPPED
+zenodo_doi: 10.5281/zenodo.22726972
+github_url: https://github.com/seefreewind/cross-ancestry-refractive-retina-regulatory
+github_commit: b51a38da74416a0a15bfef5769b519acf53bc7e6
+allowed_future_changes:
+- typo fixes
+- formatting
+- journal system metadata
+- editor-requested technical corrections
+prohibited_future_changes:
+- new discovery analysis
+- new thresholds
+- new primary endpoints
+- new comparators
+- scientific story changes
+file_hashes_sha256:
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Main_Manuscript_FINAL.docx: 1fc88cbff6d126146e1376857c46565f1dc39d72c9fc3a7de9983053f86a039f
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Supplementary_Information_FINAL.docx: b110c25067f6a799e5a3a34fca5b3d2473028355ca2b9229677fcf50fb7a52b2
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Figure1_FINAL.pdf: 2c0929ce7c44f2aa373c5793fbde6d8a0ae27246c831e47d9e17ef77d6388a44
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Figure2_FINAL.pdf: a77be966138e6e149f3570ba9224c991fb09faa5145b1873ec3ad155cfc2a9c3
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Figure3_FINAL.pdf: 6f6c8ec18e70e9fde4ac149e13e3086ef87924b6411e5aa60c00271301210d69
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/FigureS1_FINAL.pdf: 23ccfab720dce2347445802af92d71f7438a1ab28eafba8528af844dab6a5557
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Table1_FINAL.xlsx: b78ef85ef86f4160742ea4fe56fe216f6502cea4de63dfbb9a0e52ccc0757308
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Table2_FINAL.xlsx: 88cbd888fcbdcf680be1f5b564831e235c98f9af003911b5c08982ed4f46b30c
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/AI_Use_Declaration_FINAL.md: c2c61beff118dab050b2caef0f134361036aab460f513a6dd3edf9ecded2c272
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Ethics_Statement_FINAL.md: 0e5b1d81747101f03a2a6c33cb77b62dc5ff8851bc98d321bf9516c17df1d540
+  submission/HUMAN_GENETICS_SUBMISSION_FINAL/Submission_Form_Answers_FINAL.md: 11945dd94c85a314e1cc0c9e1f3483120cb47799266b878d8dd7d6545b3ce958
