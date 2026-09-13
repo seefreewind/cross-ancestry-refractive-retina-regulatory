@@ -1,0 +1,4 @@
+step	start_n	excluded_n	remaining_n	explanation
+all_retinal_OCR_annotation_membership			380615	All SNPs annotated as broad retinal OCR in the formal analysis feature matrix.
+remove_DAR_membership_within_OCR	380615	1069	379546	Only 1,069 of 1,232 DAR SNPs overlap broad retinal OCR; 163 DAR SNPs are outside OCR and are not subtracted from the OCR denominator.
+remove_OCR_intervals_overlapping_DAR_intervals	379546	267	379279	The matched non-DAR annotation is built after removing OCR intervals overlapping DAR intervals, excluding 267 additional non-DAR OCR SNPs.

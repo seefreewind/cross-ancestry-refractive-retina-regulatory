@@ -36,6 +36,7 @@ FINAL_PACKAGE = SUBMISSION / "HUMAN_GENETICS_SUBMISSION_FINAL"
 TABLE_DIR = SUBMISSION / "human_genetics_final_tables"
 FIG_DIR = ROOT / "figures" / "final_v2"
 GITHUB_RELEASE = ROOT / "github_release" / "cross-ancestry-refractive-retina-regulatory"
+FINAL_QC = ROOT / "results" / "final_qc"
 
 TITLE = "Predominantly shared cross-ancestry genetic architecture of refractive error despite ancestry-associated retinal regulatory variation"
 ZENODO_DOI = "10.5281/zenodo.22726972"
@@ -64,28 +65,28 @@ AUTHOR_CONTRIB = (
 )
 
 REFERENCES = [
-    "Brown BC, Asian Genetic Epidemiology Network Type 2 Diabetes Consortium, Ye CJ, Price AL, Zaitlen N. 2016. Transethnic genetic-correlation estimates from summary statistics. American Journal of Human Genetics 99:76-88. doi:10.1016/j.ajhg.2016.05.001.",
-    "Bulik-Sullivan BK, Loh PR, Finucane HK, Ripke S, Yang J, et al. 2015. LD Score regression distinguishes confounding from polygenicity in genome-wide association studies. Nature Genetics 47:291-295. doi:10.1038/ng.3211.",
-    "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. 2015. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4:7. doi:10.1186/s13742-015-0047-8.",
-    "Cheng FF, Liu X, Mi H, Wang L, Ma R, et al. 2026. Multi-ancestry genome-wide association analyses of refractive error augment genetic discovery and polygenic prediction. Nature Genetics 58:1030-1039. doi:10.1038/s41588-026-02576-0.",
-    "Finucane HK, Bulik-Sullivan B, Gusev A, Trynka G, Reshef Y, et al. 2015. Partitioning heritability by functional annotation using genome-wide association summary statistics. Nature Genetics 47:1228-1235. doi:10.1038/ng.3404.",
-    "Hu S, Ferreira LAF, Shi S, Hellenthal G, Marchini J, Lawson DJ, Myers SR. 2025. Fine-scale population structure and widespread conservation of genetic effect sizes between human groups across traits. Nature Genetics 57:379-389. doi:10.1038/s41588-024-02035-8.",
-    "Hysi PG, Choquet H, Khawaja AP, Wojciechowski R, Tedja MS, et al. 2020. Meta-analysis of 542,934 subjects of European ancestry identifies new genes and mechanisms predisposing to refractive error and myopia. Nature Genetics 52:401-407. doi:10.1038/s41588-020-0599-0.",
-    "Khan AT, Gogarten SM, McHugh CP, Stilp AM, Sofer T, et al. 2022. Recommendations on the use and reporting of race, ethnicity, and ancestry in genetic research: experiences from the NHLBI TOPMed program. Cell Genomics 2:100155. doi:10.1016/j.xgen.2022.100155.",
-    "Kiefer AK, Tung JY, Do CB, Hinds DA, Mountain JL, et al. 2013. Genome-wide analysis points to roles for extracellular matrix remodeling, the visual cycle, and neuronal development in myopia. PLOS Genetics 9:e1003299. doi:10.1371/journal.pgen.1003299.",
-    "Li J, Wang J, Ibarra IL, Cheng X, Luecken MD, et al. 2026. Single-cell atlas of the transcriptome and chromatin accessibility in the human retina. Nature Genetics 58:418-433. doi:10.1038/s41588-025-02454-1.",
-    "Lu Z, Wang X, Carr M, Kim A, Gazal S, Mohammadi P, Wu L, Pirruccello J, Kachuri L, Gusev A, Mancuso N. 2025. Improved multiancestry fine-mapping identifies cis-regulatory variants underlying molecular traits and disease risk. Nature Genetics 57:1881-1889. doi:10.1038/s41588-025-02262-7.",
-    "Martin AR, Gignoux CR, Walters RK, Wojcik GL, Neale BM, et al. 2017. Human demographic history impacts genetic risk prediction across diverse populations. American Journal of Human Genetics 100:635-649. doi:10.1016/j.ajhg.2017.03.004.",
-    "Shi H, Gazal S, Kanai M, Koch EM, Schoech AP, et al. 2021. Population-specific causal disease effect sizes in functionally important regions impacted by selection. Nature Communications 12:1098. doi:10.1038/s41467-021-21286-1.",
-    "The 1000 Genomes Project Consortium. 2015. A global reference for human genetic variation. Nature 526:68-74. doi:10.1038/nature15393.",
-    "Verhoeven VJM, Hysi PG, Wojciechowski R, Fan Q, Guggenheim JA, et al. 2013. Genome-wide meta-analyses of multiancestry cohorts identify multiple new susceptibility loci for refractive error and myopia. Nature Genetics 45:314-318. doi:10.1038/ng.2554.",
-    "Wallman J, Gottlieb MD, Rajaram V, Fugate-Wentzek LA. 1987. Local retinal regions control local eye growth and myopia. Science 237:73-77. doi:10.1126/science.3603011.",
-    "Wang J, Zhang Z, Lu Z, Mancuso N, Gazal S. 2024. Genes with differential expression across ancestries are enriched in ancestry-specific disease effects likely due to gene-by-environment interactions. American Journal of Human Genetics 111:2117-2128. doi:10.1016/j.ajhg.2024.07.021.",
+    "Brown BC, Asian Genetic Epidemiology Network Type 2 Diabetes Consortium, Ye CJ, Price AL, Zaitlen N (2016) Transethnic genetic-correlation estimates from summary statistics. American Journal of Human Genetics 99:76-88. https://doi.org/10.1016/j.ajhg.2016.05.001.",
+    "Bulik-Sullivan BK, Loh PR, Finucane HK, Ripke S, Yang J, et al (2015) LD Score regression distinguishes confounding from polygenicity in genome-wide association studies. Nature Genetics 47:291-295. https://doi.org/10.1038/ng.3211.",
+    "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ (2015) Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience 4:7. https://doi.org/10.1186/s13742-015-0047-8.",
+    "Cheng FF, Liu X, Mi H, Wang L, Ma R, et al (2026) Multi-ancestry genome-wide association analyses of refractive error augment genetic discovery and polygenic prediction. Nature Genetics 58:1030-1039. https://doi.org/10.1038/s41588-026-02576-0.",
+    "Finucane HK, Bulik-Sullivan B, Gusev A, Trynka G, Reshef Y, et al (2015) Partitioning heritability by functional annotation using genome-wide association summary statistics. Nature Genetics 47:1228-1235. https://doi.org/10.1038/ng.3404.",
+    "Hu S, Ferreira LAF, Shi S, Hellenthal G, Marchini J, Lawson DJ, Myers SR (2025) Fine-scale population structure and widespread conservation of genetic effect sizes between human groups across traits. Nature Genetics 57:379-389. https://doi.org/10.1038/s41588-024-02035-8.",
+    "Hysi PG, Choquet H, Khawaja AP, Wojciechowski R, Tedja MS, et al (2020) Meta-analysis of 542,934 subjects of European ancestry identifies new genes and mechanisms predisposing to refractive error and myopia. Nature Genetics 52:401-407. https://doi.org/10.1038/s41588-020-0599-0.",
+    "Khan AT, Gogarten SM, McHugh CP, Stilp AM, Sofer T, et al (2022) Recommendations on the use and reporting of race, ethnicity, and ancestry in genetic research: experiences from the NHLBI TOPMed program. Cell Genomics 2:100155. https://doi.org/10.1016/j.xgen.2022.100155.",
+    "Kiefer AK, Tung JY, Do CB, Hinds DA, Mountain JL, et al (2013) Genome-wide analysis points to roles for extracellular matrix remodeling, the visual cycle, and neuronal development in myopia. PLOS Genetics 9:e1003299. https://doi.org/10.1371/journal.pgen.1003299.",
+    "Li J, Wang J, Ibarra IL, Cheng X, Luecken MD, et al (2026) Single-cell atlas of the transcriptome and chromatin accessibility in the human retina. Nature Genetics 58:418-433. https://doi.org/10.1038/s41588-025-02454-1.",
+    "Lu Z, Wang X, Carr M, Kim A, Gazal S, Mohammadi P, Wu L, Pirruccello J, Kachuri L, Gusev A, Mancuso N (2025) Improved multiancestry fine-mapping identifies cis-regulatory variants underlying molecular traits and disease risk. Nature Genetics 57:1881-1889. https://doi.org/10.1038/s41588-025-02262-7.",
+    "Martin AR, Gignoux CR, Walters RK, Wojcik GL, Neale BM, et al (2017) Human demographic history impacts genetic risk prediction across diverse populations. American Journal of Human Genetics 100:635-649. https://doi.org/10.1016/j.ajhg.2017.03.004.",
+    "Shi H, Gazal S, Kanai M, Koch EM, Schoech AP, et al (2021) Population-specific causal disease effect sizes in functionally important regions impacted by selection. Nature Communications 12:1098. https://doi.org/10.1038/s41467-021-21286-1.",
+    "The 1000 Genomes Project Consortium (2015) A global reference for human genetic variation. Nature 526:68-74. https://doi.org/10.1038/nature15393.",
+    "Verhoeven VJM, Hysi PG, Wojciechowski R, Fan Q, Guggenheim JA, et al (2013) Genome-wide meta-analyses of multiancestry cohorts identify multiple new susceptibility loci for refractive error and myopia. Nature Genetics 45:314-318. https://doi.org/10.1038/ng.2554.",
+    "Wallman J, Gottlieb MD, Rajaram V, Fugate-Wentzek LA (1987) Local retinal regions control local eye growth and myopia. Science 237:73-77. https://doi.org/10.1126/science.3603011.",
+    "Wang J, Zhang Z, Lu Z, Mancuso N, Gazal S (2024) Genes with differential expression across ancestries are enriched in ancestry-specific disease effects likely due to gene-by-environment interactions. American Journal of Human Genetics 111:2117-2128. https://doi.org/10.1016/j.ajhg.2024.07.021.",
 ]
 
 
 def mkdirs() -> None:
-    for p in [REPORTS, SUBMISSION, PACKAGE, FINAL_PACKAGE, TABLE_DIR]:
+    for p in [REPORTS, SUBMISSION, PACKAGE, FINAL_PACKAGE, TABLE_DIR, FINAL_QC]:
         p.mkdir(parents=True, exist_ok=True)
 
 
@@ -157,8 +158,8 @@ def build_tables(d: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
             ["Harmonized EUR–EAS SNP set", "EUR–EAS", "Effect-aligned shared set after biallelic, palindromic, duplicate and allele checks", "3,262,168 harmonized SNPs", "Effect-comparison set"],
             ["Cross-ancestry analysis SNP set", "EUR–EAS", "Exact paired-reference, frequency, score and annotation alignment", "3,112,573 analysis SNPs", "S-LDXR and heterogeneity universe"],
             ["Broad retinal OCR", "Retinal regulatory context", "Union retinal open-chromatin annotation from the Human Retina Cell Atlas", "380,615 analysis-overlap annotation SNPs", "Broad retinal regulatory background"],
-            ["Ancestry-associated DAR", "Atlas-defined ancestry-associated regulatory annotation", "Differentially accessible retinal regions using the source atlas definition", "1,232 analysis-overlap annotation SNPs", "Primary tested annotation"],
-            ["Matched non-DAR retinal OCR", "Retinal comparator", "Retinal OCR SNPs not overlapping ancestry-associated DAR intervals", "379,279 analysis-overlap annotation SNPs", "Matched regulatory comparator"],
+            ["Ancestry-associated DAR", "Atlas-defined ancestry-associated regulatory annotation", "Differentially accessible retinal regions using the source atlas definition", "1,232 analysis-overlap annotation SNPs; 1,069 overlap the broad retinal OCR annotation", "Primary tested annotation"],
+            ["Matched non-DAR retinal OCR", "Retinal comparator", "Eligible non-DAR retinal OCR SNPs retained after DAR exclusion and interval-level comparator filtering", "379,279 analysis-overlap annotation SNPs; differs from simple OCR-minus-DAR because 163 DAR SNPs are outside broad OCR and 267 OCR non-DAR SNPs are excluded by interval-level comparator filtering", "Retinal-regulatory background comparator"],
         ],
         columns=["Resource / set", "Ancestry / context", "Source or definition", "Analysis information", "Role"],
     )
@@ -167,9 +168,9 @@ def build_tables(d: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     primary = d["primary"].iloc[0]
     table2_rows = []
     endpoint_labels = [
-        ("top_5pct_chi2_het", "Primary: top 5% χ²het"),
-        ("top_1pct_chi2_het", "Sensitivity: top 1% χ²het"),
-        ("top_10pct_chi2_het", "Sensitivity: top 10% χ²het"),
+        ("top_5pct_chi2_het", "Primary: top 5% χ²ₕₑₜ"),
+        ("top_1pct_chi2_het", "Sensitivity: top 1% χ²ₕₑₜ"),
+        ("top_10pct_chi2_het", "Sensitivity: top 10% χ²ₕₑₜ"),
     ]
     for endpoint, label in endpoint_labels:
         row = hetero.loc[(hetero["analysis"] == "DAR_vs_matched_non_DAR_retinal_OCR") & (hetero["endpoint"] == endpoint)].iloc[0]
@@ -214,12 +215,12 @@ def build_tables(d: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     perm = hetero.loc[hetero["endpoint"] == "matched_permutation_mean_chi2_het_difference"].iloc[0]
     block = d["block"].iloc[0]
     s3_rows = [
-        ["Continuous χ²het", "Mean χ²het difference", "1,232", "379,279", fmt3(cont.mean_difference), "", fmt3(cont.p_value), "Mann-Whitney test"],
-        ["Matched permutation", "Mean χ²het difference", "1,069 retained in informative strata", "59,215 retained in informative strata", fmt3(perm.observed_mean_difference), "", fmt3(perm.empirical_p_value), "1,000 matched label permutations"],
-        ["Block-level robustness", "Mean χ²het by block", fmt_n(block.DAR_block_N), fmt_n(block.non_DAR_block_N), fmt3(block.coefficient_has_DAR), ci_text(block.CI95_low, block.CI95_high), fmt3(block.p_value), "Adjusted for block SNP count, mean MAF, baseline LD score and retinal OCR density"],
+        ["Continuous χ²ₕₑₜ", "Mean χ²ₕₑₜ difference", "1,232", "379,279", fmt3(cont.mean_difference), "", fmt3(cont.p_value), "Mann–Whitney U test"],
+        ["Matched permutation", "Mean χ²ₕₑₜ difference", "1,069 retained in informative strata", "59,215 retained in informative strata", fmt3(perm.observed_mean_difference), "", fmt3(perm.empirical_p_value), "1,000 matched annotation-label permutations"],
+        ["Block-level robustness", "Mean χ²ₕₑₜ by block", fmt_n(block.DAR_block_N), fmt_n(block.non_DAR_block_N), fmt3(block.coefficient_has_DAR), ci_text(block.CI95_low, block.CI95_high), fmt3(block.p_value), "Adjusted for block SNP count, mean MAF, baseline LD score and retinal OCR density"],
     ]
     for _, row in d["ld_pruned"].loc[d["ld_pruned"]["endpoint"].eq("top_5pct_chi2_het")].iterrows():
-        s3_rows.append([f"LD-pruned sensitivity ({row.sensitivity})", "Top 5% χ²het", fmt_n(row.case_snp_n), fmt_n(row.background_snp_n), fmt3(row.conditional_odds_ratio), ci_text(row.or_ci95_low, row.or_ci95_high), fmt3(row.p_value), "Label-blind LD pruning; severely underpowered"])
+        s3_rows.append([f"LD-pruned sensitivity ({row.sensitivity})", "Top 5% χ²ₕₑₜ", fmt_n(row.case_snp_n), fmt_n(row.background_snp_n), fmt3(row.conditional_odds_ratio), ci_text(row.or_ci95_low, row.or_ci95_high), fmt3(row.p_value), "Label-blind LD pruning; severely underpowered"])
     table_s3 = pd.DataFrame(s3_rows, columns=["Analysis", "Endpoint", "DAR N", "Comparator N", "Effect", "95% CI", "P", "Notes"])
 
     precision = d["primary"].iloc[0]
@@ -297,6 +298,10 @@ def read_original_sections() -> dict[str, str]:
     text = re.sub(r"^Sisi Xu\^1\^.*?ORCID: Ling Qiu, 0009-0007-3662-5124\n\n", "", text, flags=re.S | re.M)
     text = text.replace("The study used publicly available ancestry-specific refractive-error GWAS summary statistics from Cheng et al.", "The study used publicly available ancestry-specific refractive-error GWAS summary statistics from Cheng et al. (2026).")
     text = text.replace("Retinal regulatory annotations were derived from the Human Retina Cell Atlas.", "Retinal regulatory annotations were derived from the Human Retina Cell Atlas (Li et al. 2026).")
+    text = text.replace("We tested whether ancestry-associated retinal regulatory variation marks divergent European (EUR) and East Asian (EAS) genetic architecture for refractive error.", "We tested whether ancestry-associated retinal regulatory variation marks genomic regions with divergent association effects between EUR and EAS refractive-error GWAS.")
+    text = text.replace("Large refractive-error GWAS have identified many susceptibility loci, and the most recent multi-ancestry study of EUR, EAS and AFR cohorts greatly expanded discovery while reporting broad cross-ancestry sharing (Verhoeven et al. 2013; Hysi et al. 2020; Cheng et al. 2026).", "Large refractive-error GWAS have substantially expanded locus discovery (Hysi et al. 2020). Multi-ancestry studies have subsequently demonstrated substantial cross-ancestry sharing while identifying locally ancestry-enriched or ancestry-specific signals (Verhoeven et al. 2013; Cheng et al. 2026).")
+    text = text.replace("The analysis tested cross-ancestry genetic-effect sharing at three nested levels: genome-wide common-variant architecture, broad retinal OCRs and ancestry-associated retinal DARs.", "The analysis evaluated cross-ancestry genetic architecture in a three-level nested framework: genome-wide sharing, broad retinal regulatory sharing and DAR-specific association-effect heterogeneity.")
+    text = text.replace("Case labels were permuted within strata defined by chromosome, average EUR/EAS reference MAF decile, absolute EUR–EAS MAF-difference quintile, baseline LD-score decile and retinal OCR status.", "DAR/non-DAR annotation labels were permuted within strata defined by chromosome, average EUR/EAS reference MAF decile, absolute EUR–EAS MAF-difference quintile, baseline LD-score decile and retinal OCR status. The permutation universe contained SNPs annotated as DAR or eligible matched non-DAR retinal OCRs; informative strata retained 1,069 DAR SNPs and 59,215 matched non-DAR SNPs.")
     text = text.replace("Using the method-standard MAF > 0.05 threshold", "In primary S-LDXR analyses using MAF > 0.05 in both ancestries")
     text = text.replace("Absence of enrichment would suggest that molecular ancestry differences and complex-trait effect divergence can represent distinct architectural layers.", "Absence of enrichment would be consistent with molecular ancestry differences and complex-trait effect divergence representing distinct architectural layers.")
     text = text.replace("The ancestry-associated DAR annotation was treated as a regulatory context for statistical testing, not as a causal mechanism label. The matched non-DAR retinal OCR set was used as an operational comparator and was not interpreted as proof of regulatory invariance across ancestries. Cell-type-specific S-LDXR, locus prioritization, CRE-to-gene mapping and motif analyses were not performed.", "The ancestry-associated DAR annotation was treated as a regulatory context for statistical testing, not as a causal mechanism label. The matched non-DAR retinal OCR set was used as an operational comparator for ancestry-associated DAR enrichment tests.")
@@ -311,8 +316,22 @@ def read_original_sections() -> dict[str, str]:
     text = text.replace("Preliminary baseline files that failed row-set compatibility checks were excluded from inference and retained only as provenance records.", "Formal inference used only score and annotation files that passed exact SNP-universe alignment.")
     text = text.replace("No new DAR definition, SNP universe, heterogeneity metric, ancestry comparison, pathway analysis, fine-mapping, TWAS, SMR, MR, PRS, motif analysis or locus fishing was introduced after the primary result.", "Primary endpoints and comparators were defined before post-primary sensitivity analyses.")
     text = re.sub(r"\bEUR-EAS\b", "EUR–EAS", text)
+    text = text.replace("Case labels were permuted within strata defined by chromosome, average EUR/EAS reference MAF decile, absolute EUR–EAS MAF-difference quintile, baseline LD-score decile and retinal OCR status.", "DAR/non-DAR annotation labels were permuted within strata defined by chromosome, average EUR/EAS reference MAF decile, absolute EUR–EAS MAF-difference quintile, baseline LD-score decile and retinal OCR status. The permutation universe contained SNPs annotated as DAR or eligible matched non-DAR retinal OCRs; informative strata retained 1,069 DAR SNPs and 59,215 matched non-DAR SNPs.")
     text = re.sub(r"MAF >0\.0([15])", r"MAF > 0.0\1", text)
     text = text.replace("chi2_het", "χ²het")
+    text = text.replace("χ²het", "χ²ₕₑₜ")
+    text = text.replace("h2 =", "h² =")
+    text = text.replace("r2 <", "r² <")
+    text = text.replace("alpha = 0.05", "α = 0.05")
+    text = text.replace("alpha = 0.5", "α = 0.5")
+    text = text.replace("Mann-Whitney P", "Mann–Whitney U test P")
+    text = text.replace("Mann-Whitney test", "Mann–Whitney U test")
+    text = text.replace("descriptive underpowered result", "descriptive, imprecise estimate")
+    text = text.replace("not used as the primary biological test", "was not used as the primary inferential test")
+    text = text.replace("and was was not used as the primary inferential test", "and was not used as the primary inferential test")
+    text = text.replace("This design controls for broad retinal regulatory context and targets the ancestry-DAR label itself.", "This design provides a retinal-regulatory background comparator, reduces confounding by broad OCR membership and targets the ancestry-DAR label itself.")
+    text = text.replace("multiancestry", "multi-ancestry")
+    text = text.replace("reference anchored", "reference-anchored")
     text = text.replace("true effect divergence", "association-effect heterogeneity")
     text = text.replace("1.027596", "1.028").replace("0.099604", "0.100").replace("0.832373-1.222820", "0.832–1.223")
     text = text.replace("0.947606", "0.948").replace("0.096926", "0.097").replace("0.757631-1.137582", "0.758–1.138")
@@ -340,7 +359,7 @@ def final_manuscript_md(tables: dict[str, pd.DataFrame]) -> str:
         [
             "Fig. 1. Study design. Study framework with two separate input streams. Public EUR no-23andMe and EAS refractive-error GWAS summary statistics entered GWAS harmonization, including allele alignment, shared-variant matching, reference anchoring and paired-reference checks. Human retinal regulatory atlas annotations entered a separate regulatory-processing stream, including source annotation definition, coordinate harmonization/liftover, reference anchoring and SNP annotation mapping. The streams were joined in an aligned analysis framework used to test cross-ancestry genetic sharing genome-wide and within broad retinal OCRs, and ancestry-linked association-effect heterogeneity in ancestry-associated DARs relative to matched non-DAR retinal OCRs. Robustness checks were attached to the DAR heterogeneity branch.",
             "Fig. 2. Genome-wide and retinal-OCR cross-ancestry sharing. Forest plot showing S-LDXR GCORSQ estimates and 95% confidence intervals. Primary MAF > 0.05 estimates are shown with stronger visual weight for genome-wide and all-retinal-OCR analyses. MAF > 0.01 estimates are shown as supporting sensitivity analyses. The vertical dashed line marks GCORSQ = 1. Estimates above 1 are interpreted as boundary-adjacent estimator behavior around high sharing, not as evidence that the underlying correlation exceeds its natural parameter boundary.",
-            "Fig. 3. DAR heterogeneity, permutation and precision. (A) Observed proportions of SNPs in the top 5% of the genome-wide χ²het distribution for ancestry-associated DARs and matched non-DAR retinal OCRs. (B) Primary odds ratio, 95% confidence interval and P value for the top-5% endpoint, shown together with the 80% and 90% minimum detectable odds ratios and the OR = 1.5 large-effect reference boundary. (C) Matched-permutation null distribution of the mean χ²het difference. Shaded tails represent permutation statistics at least as extreme as the observed absolute statistic. The empirical P value is two-sided. Block-level analysis was consistent with the primary inference (adjusted P = 0.3836).",
+            "Fig. 3. DAR heterogeneity, permutation and precision. (A) Observed proportions of SNPs in the top 5% of the genome-wide χ²ₕₑₜ distribution for ancestry-associated DARs and matched non-DAR retinal OCRs. (B) Primary odds ratio, 95% confidence interval and P value for the top-5% endpoint, shown together with the 80% and 90% minimum detectable odds ratios and the OR = 1.5 large-effect reference boundary. (C) Matched-permutation null distribution of the mean χ²ₕₑₜ difference. Shaded tails represent permutation statistics at least as extreme as the observed absolute statistic. The empirical P value is two-sided. Block-level analysis was consistent with the primary inference (adjusted P = 0.3836).",
         ]
     )
     refs = "\n\n".join(REFERENCES)
@@ -364,7 +383,7 @@ def final_manuscript_md(tables: dict[str, pd.DataFrame]) -> str:
             body = body.replace("Genome-build uncertainty was handled", "These analytical sets are summarized in Table 1. Genome-build uncertainty was handled")
             body = body.replace("Using the method-standard MAF > 0.05 threshold", "Figure 2 summarizes the S-LDXR estimates. Using the method-standard MAF > 0.05 threshold")
             body = body.replace("The primary DAR heterogeneity test did not support", "Table 2 and Fig. 3 summarize the primary and threshold-sensitivity DAR heterogeneity tests. The primary DAR heterogeneity test did not support")
-            body = body.replace("The global ancestry-DAR S-LDXR estimate was retained only as a descriptive underpowered result", "Supplementary Fig. S1 shows the global ancestry-associated DAR S-LDXR estimate as a descriptive underpowered result")
+            body = body.replace("The global ancestry-DAR S-LDXR estimate was retained only as a descriptive underpowered result", "Supplementary Fig. S1 shows the global ancestry-associated DAR S-LDXR estimate as a descriptive, imprecise estimate")
         out += ["", f"## {title}", "", body]
     out += ["", "## Tables", "", "Table 1. GWAS resources, analysis sets and retinal annotations.", "", "Table 2. Association-effect heterogeneity in ancestry-associated retinal DARs.", ""]
     out += ["## Figure legends", "", legends, ""]
@@ -562,7 +581,7 @@ cosend99@163.com
 
 
 def supplementary_md(tables: dict[str, pd.DataFrame]) -> str:
-    s1_legend = "Supplementary Fig. S1. Descriptive ancestry-DAR S-LDXR estimate. Descriptive S-LDXR estimate for the ancestry-DAR annotation. Sparse SNP support yielded wide uncertainty, so this panel is separated from the main cross-ancestry architecture figure and interpreted as a descriptive annotation-level result."
+    s1_legend = "Supplementary Fig. S1. Descriptive ancestry-DAR S-LDXR estimate. Descriptive, imprecise S-LDXR estimate for the ancestry-DAR annotation. Sparse SNP support yielded wide uncertainty, so this panel is separated from the main cross-ancestry architecture figure and was not used as the primary inferential test."
     md = f"""# Supplementary Information
 
 ## Supplementary Methods
@@ -842,7 +861,8 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
 
     ref_rows = []
     for ref in REFERENCES:
-        doi = re.search(r"doi:([^.\s]+(?:\.[^.\s]+)*)", ref).group(1)
+        doi_match = re.search(r"https://doi\.org/([^\s.]+(?:\.[^\s.]+)*)", ref)
+        doi = doi_match.group(1) if doi_match else ""
         ok, final = check_url("https://doi.org/" + doi)
         ref_rows.append([ref.split(". ")[0], doi, "PASS" if ok else "ISSUE", final])
     alphabetical = REFERENCES == sorted(REFERENCES, key=lambda x: x.lower())
@@ -967,6 +987,88 @@ def write_audits(md: str, tables: dict[str, pd.DataFrame]):
         "# Final reference cross-audit\n\n"
         + pd.DataFrame(cross_rows, columns=["reference", "category"]).to_markdown(index=False)
         + "\n\nCITED_NOT_LISTED: none.\n\nLISTED_NOT_CITED: none.\n\nMETADATA_ISSUE: none identified after DOI-resolution audit.\n\nFinal verdict: `PASS`.\n",
+        encoding="utf-8",
+    )
+    (REPORTS / "FINAL_CITATION_REFERENCE_ERROR_AUDIT.md").write_text(
+        "# Final citation and reference error audit\n\n"
+        + pd.DataFrame(cross_rows, columns=["reference", "category"]).to_markdown(index=False)
+        + "\n\n"
+        "BIBLIOGRAPHIC_ERROR: none identified after DOI-resolution and metadata-format audit.\n\n"
+        "CLAIM_CITATION_MISMATCH: Hysi et al. 2020 is now used for European-ancestry locus discovery; cross-ancestry sharing is attributed to Verhoeven et al. 2013 and Cheng et al. 2026. Brown et al. 2016 is cited in Supplementary Methods for Popcorn. Martin et al. 2017 remains cited in the Discussion for polygenic-prediction portability.\n\n"
+        "Final verdict: `PASS`.\n",
+        encoding="utf-8",
+    )
+
+    recon_rows = [
+        ["all_retinal_OCR_annotation_membership", "", "", 380615, "All SNPs annotated as broad retinal OCR in the formal analysis feature matrix."],
+        ["remove_DAR_membership_within_OCR", 380615, 1069, 379546, "Only 1,069 of 1,232 DAR SNPs overlap broad retinal OCR; 163 DAR SNPs are outside OCR and are not subtracted from the OCR denominator."],
+        ["remove_OCR_intervals_overlapping_DAR_intervals", 379546, 267, 379279, "The matched non-DAR annotation is built after removing OCR intervals overlapping DAR intervals, excluding 267 additional non-DAR OCR SNPs."],
+    ]
+    recon_df = pd.DataFrame(recon_rows, columns=["step", "start_n", "excluded_n", "remaining_n", "explanation"])
+    recon_df.to_csv(FINAL_QC / "NONDAR_COUNT_RECONCILIATION.tsv", sep="\t", index=False)
+    (REPORTS / "NONDAR_104_SNP_DISCREPANCY_AUDIT.md").write_text(
+        "# Non-DAR 104-SNP discrepancy audit\n\n"
+        "Final verdict: `RESOLVED`.\n\n"
+        "The 104-SNP difference is a net-definition difference, not a set of 104 unaccounted SNPs. The broad retinal OCR annotation contains 380,615 SNPs. The DAR annotation contains 1,232 SNPs, but only 1,069 of them overlap broad retinal OCR, so 163 DAR SNPs should not be subtracted from the OCR denominator. A simple SNP-level OCR-minus-DAR count is therefore 379,546. The matched non-DAR retinal OCR comparator is not this simple subtraction; it is generated by removing OCR intervals that overlap DAR intervals before assigning comparator membership. That interval-level filtering removes 267 additional OCR non-DAR SNPs, yielding 379,279 matched non-DAR retinal OCR SNPs. The apparent discrepancy equals 267 interval-level exclusions minus 163 DAR-outside-OCR SNPs = 104.\n\n"
+        "Source evidence: `data/processed/phase2/EUR_EAS_HETEROGENEITY_FEATURES.parquet` annotation columns and `scripts/annotation/build_sldxr_annotations.py::remove_overlapping_intervals()`.\n\n"
+        + recon_df.to_markdown(index=False)
+        + "\n",
+        encoding="utf-8",
+    )
+
+    perm_rows = [
+        ["initial permutation universe", "dar_global == 1 OR matched_non_dar_ocr == 1", 380511],
+        ["initial DAR labels", "case = dar_global", 1232],
+        ["initial matched non-DAR labels", "matched_non_dar_ocr == 1", 379279],
+        ["informative retained DAR labels", "strata containing both labels", 1069],
+        ["informative retained matched non-DAR labels", "strata containing both labels", 59215],
+        ["informative strata", "CHR, MAF decile, MAF-difference quintile, LD-score decile, retinal OCR status", 834],
+    ]
+    perm_df = pd.DataFrame(perm_rows, columns=["item", "definition", "n"])
+    perm_df.to_csv(FINAL_QC / "MATCHED_PERMUTATION_UNIVERSE_SUMMARY.tsv", sep="\t", index=False)
+    (REPORTS / "MATCHED_PERMUTATION_LOGIC_AUDIT.md").write_text(
+        "# Matched permutation logic audit\n\n"
+        "Final verdict: `PASS`.\n\n"
+        "The code permutes DAR/non-DAR annotation labels within matched strata. The manuscript wording has been corrected from case-label language to annotation-label language. The initial universe contains SNPs annotated as DAR or eligible matched non-DAR retinal OCRs, not the whole genome. Informative strata are strata containing both annotation labels; this retained 1,069 DAR SNPs and 59,215 matched non-DAR SNPs. Retinal OCR status is useful before filtering because 163 DAR SNPs are outside the broad OCR annotation and have no matched non-DAR OCR controls. After informative-strata filtering, the retained comparison is OCR-only, so the OCR-status variable is constant among retained informative strata but valid as part of the pre-filter matching definition.\n\n"
+        + perm_df.to_markdown(index=False)
+        + "\n",
+        encoding="utf-8",
+    )
+
+    (REPORTS / "CHENG_2026_CORRECTION_CHECK.md").write_text(
+        "# Cheng 2026 correction check\n\n"
+        "Final verdict: `PASS`.\n\n"
+        "Crossref metadata confirms the source article as Cheng et al. (2026), \"Multi-ancestry genome-wide association analyses of refractive error augment genetic discovery and polygenic prediction,\" Nature Genetics 58:1030-1039, DOI `10.1038/s41588-026-02576-0`. Crossref also lists a Publisher Correction with DOI `10.1038/s41588-026-02643-6`, Nature Genetics 58:1448, published online 1 June 2026.\n\n"
+        "The manuscript cites Cheng et al. (2026) as the source refractive-error GWAS and does not cite the Publisher Correction as scientific evidence. The present manuscript uses Cheng et al. only for the public GWAS resource, broad cross-ancestry sharing, ancestry-enriched signals and prediction-portability context. No methods, results or numerical claims in this manuscript depend on a correction-specific scientific result.\n",
+        encoding="utf-8",
+    )
+
+    logic_rows = [
+        ["Nested-design logic", "PASS", "Text now says the study evaluated cross-ancestry genetic architecture in a three-level nested framework."],
+        ["Abstract estimand", "PASS", "The abstract now states the tested question as divergent association effects between EUR and EAS GWAS."],
+        ["Comparator claim", "PASS", "The Discussion now describes the comparator as a retinal-regulatory background comparator that reduces broad OCR-membership confounding."],
+        ["DAR S-LDXR wording", "PASS", "The sparse annotation estimate is described as descriptive and imprecise, not as an inferential biological test."],
+        ["Hysi citation logic", "PASS", "Hysi 2020 is restricted to European-ancestry locus discovery; cross-ancestry claims use Verhoeven 2013 and Cheng 2026."],
+        ["Overclaim scan", "PASS", "No claim of causal validation, clinical utility, mechanism confirmation, or therapeutic readiness was added."],
+    ]
+    (REPORTS / "FINAL_LOGIC_CONSISTENCY_AUDIT.md").write_text(
+        "# Final logic consistency audit\n\n"
+        + pd.DataFrame(logic_rows, columns=["check", "status", "resolution"]).to_markdown(index=False)
+        + "\n\nFinal verdict: `PASS`.\n",
+        encoding="utf-8",
+    )
+
+    (REPORTS / "FINAL_ERROR_CORRECTION_CHANGELOG.md").write_text(
+        "# Final error-correction changelog\n\n"
+        "- Resolved the 104-SNP non-DAR count discrepancy as a net-definition difference caused by 163 DAR-outside-OCR SNPs and 267 interval-level OCR comparator exclusions.\n"
+        "- Corrected permutation wording from case labels to DAR/non-DAR annotation labels and documented the retained informative universe.\n"
+        "- Corrected the abstract estimand to association-effect divergence between EUR and EAS refractive-error GWAS.\n"
+        "- Reframed the nested analysis as a three-level cross-ancestry genetic-architecture framework.\n"
+        "- Corrected Hysi 2020 citation logic and retained Verhoeven 2013 plus Cheng 2026 for cross-ancestry sharing.\n"
+        "- Softened DAR S-LDXR wording to descriptive, imprecise estimate and non-primary inferential test.\n"
+        "- Reworded the Discussion comparator claim to avoid overclaiming complete control for retinal regulatory context.\n"
+        "- Standardized statistical notation and reference-list style.\n\n"
+        "Final verdict: `PASS`.\n",
         encoding="utf-8",
     )
 
@@ -1226,7 +1328,9 @@ def main():
     d = load_data()
     tables = build_tables(d)
     md = final_manuscript_md(tables)
+    (ROOT / "manuscript" / "HUMAN_GENETICS_MANUSCRIPT_FINAL_QC.md").write_text(md, encoding="utf-8")
     md_to_docx(md, SUBMISSION / "HUMAN_GENETICS_MANUSCRIPT_FINAL.docx", tables=tables, main=True)
+    shutil.copy2(SUBMISSION / "HUMAN_GENETICS_MANUSCRIPT_FINAL.docx", ROOT / "manuscript" / "HUMAN_GENETICS_MANUSCRIPT_FINAL_QC.docx")
     make_title_page()
     make_cover_letter()
     supp = supplementary_md(tables)

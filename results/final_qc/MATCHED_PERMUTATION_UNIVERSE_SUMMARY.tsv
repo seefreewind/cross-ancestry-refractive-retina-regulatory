@@ -1,0 +1,7 @@
+item	definition	n
+initial permutation universe	dar_global == 1 OR matched_non_dar_ocr == 1	380511
+initial DAR labels	case = dar_global	1232
+initial matched non-DAR labels	matched_non_dar_ocr == 1	379279
+informative retained DAR labels	strata containing both labels	1069
+informative retained matched non-DAR labels	strata containing both labels	59215
+informative strata	CHR, MAF decile, MAF-difference quintile, LD-score decile, retinal OCR status	834
